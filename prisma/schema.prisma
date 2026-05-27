@@ -1,0 +1,102 @@
+// 个人机票与报销台账系统 - Prisma Schema
+// MVP：仅个人使用，单库无多租户
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Agent {
+  id              String        @id @default(cuid())
+  name            String        @unique
+  contactPerson   String?
+  phone           String?
+  wechat          String?
+  email           String?
+  defaultAgentFee Float?
+  remark          String?
+  enabled         Boolean       @default(true)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  orders          TicketOrder[]
+}
+
+model TicketOrder {
+  id                       String       @id @default(cuid())
+  orderNo                  String       @unique
+  bookingDate              DateTime?
+  passengerName            String
+  route                    String
+  departureDate            DateTime?
+  returnDate               DateTime?
+  airline                  String?
+  cabinClass               String?
+  pnr                      String?
+  ticketNo                 String?
+  agentId                  String?
+  agent                    Agent?       @relation(fields: [agentId], references: [id], onDelete: SetNull)
+  orderStatus              String       @default("BOOKED")
+  reimbursementStatus      String       @default("PENDING")
+
+  // 金额（人民币，允许为空，计算时按 0 处理）
+  actualPaidAmount         Float?
+  invoiceAmount            Float?
+  reimbursedAmount         Float?
+  agentFee                 Float?
+  otherCost                Float?
+  refundAmount             Float?
+  taxRate                  Float?
+  taxCost                  Float?       // 派生但持久化，便于报表
+  reimbursementDifference  Float?       // 派生但持久化
+  netBalance               Float?       // 派生但持久化
+
+  // 发票信息
+  invoiceTitle             String?
+  taxNo                    String?
+  invoiceType              String?      // GENERAL / SPECIAL / ELECTRONIC / ITINERARY / OTHER
+  invoiceNo                String?
+  invoiceDate              DateTime?
+  reimbursementDate        DateTime?
+  reimbursementRemark      String?
+
+  // 派生风险等级
+  riskLevel                String       @default("NORMAL") // NORMAL / WATCH / ABNORMAL
+
+  remark                   String?
+
+  attachments              Attachment[]
+
+  createdAt                DateTime     @default(now())
+  updatedAt                DateTime     @updatedAt
+
+  @@index([passengerName])
+  @@index([route])
+  @@index([pnr])
+  @@index([ticketNo])
+  @@index([agentId])
+  @@index([reimbursementStatus])
+  @@index([riskLevel])
+}
+
+model Attachment {
+  id          String      @id @default(cuid())
+  orderId     String
+  order       TicketOrder @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  name        String
+  type        String      // ETICKET / ITINERARY / INVOICE / PAYMENT / REIMBURSEMENT / AGENT_QUOTE / OTHER
+  url         String
+  remark      String?
+  createdAt   DateTime    @default(now())
+
+  @@index([orderId])
+}
+
+model Setting {
+  id          String   @id @default("global")
+  defaultTaxRate Float?  @default(0.06)
+  currency       String  @default("CNY")
+  updatedAt   DateTime @updatedAt
+}
