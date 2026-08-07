@@ -1,0 +1,186 @@
+{
+  "_meta": {
+    "description": "Paid/syndicated data vendor catalog for US major-appliance & laundry-center market share/shipment/POS data — purchase paths, published prices, reliability tiers",
+    "access_date": "2026-08-07",
+    "collection_method": "All direct vendor-site fetches blocked by environment egress proxy; every item provenance=search_snippet. Nothing inferred beyond what snippets stated; unpublished prices marked quote-based.",
+    "bottom_line": "Only vendors with publicly observable prices: Statista ($199/$1,399 per month, annual billing), IBISWorld ($2,850 full report / $800 Spotlight), Freedonia Focus series ($900-$1,100 via marketresearch.com), AHAM store items (member/non-member differential; one digest cited $350 vs $5,000 — indicative only). Brand-share-for-laundry specifically comes from exactly two syndicated sources: TraQline/OpenBrand Durable IQ (survey panel, quarterly) and Circana (retail POS) — both quote-based."
+  },
+  "paid_data_catalog": [
+    {
+      "vendor": "TraQline / The Stevenson Company (now OpenBrand)",
+      "product": "Durable IQ (renamed from 'TraQline' flagship, 2023) + free MarketSignal quarterly dashboards",
+      "what_you_get_for_laundry_centers": "Quarterly US consumer-survey market share for durable goods incl. major appliances/laundry: brand share, retailer share, price points, online vs brick-and-mortar, demographics, purchase drivers. Free MarketSignal 'Major Appliances' dashboard showed brand unit share: 'Whirlpool (22.2% unit share) and GE (21.4%) holding the top spots'. Laundry-center-specific breakout not directly observed in snippets.",
+      "granularity": "Brand + retailer share, category level (claims 170+ categories, 2,500+ brands, 1,000+ outlets); quarterly; channel split; model-level not observed",
+      "published_price": "quote-based (no subscription pricing published; MarketSignal dashboards described as free 'without a subscription')",
+      "price_url": null,
+      "pricing_model": "Subscription; demo/complimentary-data-report request via OpenBrand",
+      "reliability_claim": "Survey-based tracker, not POS: 'run quarterly since 2001... surveys 600,000 households in the United States each year, or 150,000 per quarter', 90-day purchase recall; the share source cited in Samsung/LG press coverage",
+      "source_urls": [
+        "https://stevensoncompany.com/traqline-us/",
+        "https://openbrand.com/market-measurement",
+        "https://openbrand.com/consumer-durables/major-appliances",
+        "https://openbrand.com/snapshots/major-appliances-market",
+        "https://openbrand.com/newsroom/blog/us-major-appliance-industry-market-share-trends-rankings-infographic",
+        "https://www.prnewswire.com/news-releases/traqline-renames-its-flagship-market-share-and-consumer-insights-data-solution-durable-iq-301843170.html",
+        "https://www.businesskorea.co.kr/news/articleView.html?idxno=26126"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "Circana (formerly NPD + IRI)",
+      "product": "Retail POS market measurement + receipt/scan panel + survey (Complete Market, Market Share Drivers, Liquid Data); Appliances industry practice",
+      "what_you_get_for_laundry_centers": "Retail POS tracking for appliances; 2026 UK-launch announcement describes 'weekly and monthly sales insights' applying 'Circana's US data taxonomy... categories, hierarchies and product attributes', indicating an existing North American home-appliance POS service with item/attribute-level hierarchy. Laundry-center category depth not directly observed.",
+      "granularity": "POS by retailer/channel/price tier with product attributes; weekly and monthly cadence",
+      "published_price": "quote-based (no public pricing observed)",
+      "price_url": null,
+      "pricing_model": "Enterprise subscription; contact/demo via circana.com/company/contact-us",
+      "reliability_claim": "Primary POS panel (highest tier): 'monitors point-of-sale transactions from 290 million households globally'; 'calibrates its panel to POS data with over 1,100 retail partners in the U.S.'",
+      "source_urls": [
+        "https://www.circana.com/industries/appliances",
+        "https://www.circana.com/post/circana-to-launch-uk-consumer-tech-and-home-appliances-market-measurement-service-in-2026",
+        "https://www.circana.com/post/understanding-market-share-and-tracking-it-accurately",
+        "https://www.circana.com/company/contact-us"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "AHAM (Association of Home Appliance Manufacturers)",
+      "product": "Major Appliance Factory Shipment Report (FSR, incl. 'Media Only' edition) + Major Appliance Annual Shipment Trends 1989-2025; sold via aham.org store",
+      "what_you_get_for_laundry_centers": "Industry-level factory shipment units (not brand share): 'current month over month and year-to-date comparisons, including domestic and import unit shipments along with percentage change'. Annual Shipment Trends explicitly includes 'home laundry appliances'. No brand or model split observed.",
+      "granularity": "Product-category unit shipments (industry aggregate), monthly data; subscription 'per person, not per entity'",
+      "published_price": "Listed on store pages but not visible in snippets; one search digest cited an AHAM data product at '$350.00 member / $5,000.00 non-member' (product not identifiable from snippet — indicative only, verify on ItemDetail page)",
+      "price_url": "https://www.aham.org/ItemDetail?iProductCode=FSR2025&Category=DATAPROG&WebsiteKey=2b49af81-10d3-4aa0-98cb-47387f36cf18",
+      "pricing_model": "Per-report/subscription purchase from AHAM store; member vs non-member pricing",
+      "reliability_claim": "Primary manufacturer-reported shipments: 'the source for the home appliance industry's most accurate data on major home appliance shipments'; FSR called 'the most reliable factory shipment data available'",
+      "source_urls": [
+        "https://www.aham.org/ItemDetail?iProductCode=FSR2025&Category=DATAPROG&WebsiteKey=2b49af81-10d3-4aa0-98cb-47387f36cf18",
+        "https://www.aham.org/ItemDetail?iProductCode=50011_21&Category=DATAPROG",
+        "https://www.aham.org/AHAM/What_We_Do/Top_Industry_Data__Research"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "Statista",
+      "product": "Statista platform subscriptions; Market Insights (Consumer Market Outlook) 'Household Appliances / Major Appliances / Washing Machines - United States'",
+      "what_you_get_for_laundry_centers": "Modeled market revenue/volume forecasts (US household appliances 'market volume of US$72.02bn in 2029'; major appliances 'volume... 54.8m pieces by 2030'), plus curated third-party stats (some charts cite TraQline). NO brand share of its own; no laundry-center model data.",
+      "granularity": "Category-level market size/forecast, country level; no brand/model/retailer share",
+      "published_price": "Starter Account $199 USD/month billed annually (single user); Professional Account $1,399 USD/month billed annually (teams up to 5, includes Reports and Market Insights); prices exclude sales tax; annual auto-renew",
+      "price_url": "https://www.statista.com/accounts/individuals/",
+      "pricing_model": "Published self-serve subscription tiers; annual contract",
+      "reliability_claim": "Aggregator + modeled outlooks (washer 'Market Insights' figures are forecasts) — modeled estimate tier, not a POS panel",
+      "source_urls": [
+        "https://www.statista.com/outlook/cmo/household-appliances/major-appliances/washing-machines/united-states",
+        "https://www.statista.com/outlook/cmo/household-appliances/united-states",
+        "https://www.capterra.com/p/249505/statista/",
+        "https://www.vendr.com/marketplace/statista"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "IBISWorld",
+      "product": "'Major Household Appliance Manufacturing in the US' industry report (industry 789)",
+      "what_you_get_for_laundry_centers": "US industry sizing (observed: 'market size... $25.0bn in 2024', '$24.8bn in 2025, decreased -0.8%'), trends, major-company analysis; industry-level manufacturing view, not retail brand share by category",
+      "granularity": "Industry level, company profiles; annual updates",
+      "published_price": "US Industry Research Report: US $2,850 per report; Industry Spotlight Report: US $800",
+      "price_url": "https://help.ibisworld.com/en/articles/8119074-how-much-does-it-cost-to-purchase-one-report",
+      "pricing_model": "Per-report purchase or annual membership",
+      "reliability_claim": "Modeled estimate tier: sources 'US Census Bureau and industry-specific sources'; forecasts via 'regression analysis and driver growth rate models'",
+      "source_urls": [
+        "https://www.ibisworld.com/united-states/market-size/major-household-appliance-manufacturing/789/",
+        "https://help.ibisworld.com/en/articles/8119074-how-much-does-it-cost-to-purchase-one-report"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "The Freedonia Group",
+      "product": "Freedonia Focus Report 'Major Household Appliances: United States' (ff90017) + 'Global Major Household Appliances' industry study",
+      "what_you_get_for_laundry_centers": "US Focus report: 'high-level overview... demand & shipment forecasts through 2028 segmented by product & market' with 'Market Leaders' section. Category-level (laundry as a product segment); no brand-share tracking, no model-level.",
+      "granularity": "Product-segment demand/shipments, annual snapshots; market-leader qualitative profiles",
+      "published_price": "US report price not observed; sibling Freedonia Focus appliance reports listed on marketresearch.com at USD $900 (Sept 2024 editions) and USD $1,100 (Europe, Aug 2024)",
+      "price_url": "https://www.marketresearch.com/Freedonia-Focus-v3334/",
+      "pricing_model": "Per-report purchase (direct or via resellers)",
+      "reliability_claim": "Modeled estimate tier",
+      "source_urls": [
+        "https://www.freedoniagroup.com/freedonia-focus/major-household-appliances-united-states-ff90017.htm",
+        "https://www.freedoniagroup.com/industry-study/global-major-household-appliances",
+        "https://www.marketresearch.com/Freedonia-Focus-v3334/Major-Household-Appliances-Europe-38681612/"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "Grand View Research",
+      "product": "'North America Household Washer And Dryer Market Report, 2033' / 'U.S. Residential Washing Machine Market' / 'U.S. Household Appliances Market' reports",
+      "what_you_get_for_laundry_centers": "Modeled market size & forecast (observed: NA washer/dryer market 'to reach $21.18Bn by 2033'; US residential washing machine 'USD 5,504.0 million in 2022... CAGR 6.7%'); segment splits and company landscape; not POS, no model-level data; '20% free customization'",
+      "granularity": "Country/region category level, segment splits, company profiles; one-time report",
+      "published_price": "quote-based per observed evidence (GVR on-page prices never surfaced in snippets). Note: similar-topic report from aggregator datainsightsmarket.com listed USD 4,900/7,350/9,800 — NOT a GVR price.",
+      "price_url": null,
+      "pricing_model": "Per-report license (single/multi/enterprise structure typical of sector)",
+      "reliability_claim": "Modeled estimate tier (forecast reports); no POS/panel claim observed",
+      "source_urls": [
+        "https://www.grandviewresearch.com/industry-analysis/north-america-household-washer-dryer-market-report",
+        "https://www.grandviewresearch.com/industry-analysis/us-residential-washing-machine-market-report"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "Mordor Intelligence",
+      "product": "'United States Laundry Appliances Market' report (2026-2031) + 'United States Major Home Appliances' / 'United States Washing Machine' reports; resold via GII Research",
+      "what_you_get_for_laundry_centers": "Modeled sizing/forecast: 'worth USD 8.12 billion in 2026... CAGR of 3.04% to reach USD 9.43 billion by 2031'; segmented 'by product type, loading type, capacity, usage, and distribution channel' with market-share analysis of top companies; no POS/model-level tracking",
+      "granularity": "Country category level with segment + distribution-channel splits; company share analysis; one-time report with forecast",
+      "published_price": "Not observed on laundry report page; one search digest stated Mordor 'reports offer Single User License pricing of $4750... standard offering' (unpinned to this SKU — verify on report page)",
+      "price_url": "https://www.giiresearch.com/report/moi1939015-united-states-laundry-appliances-market-share.html",
+      "pricing_model": "Per-report license tiers (single/team/corporate), direct or via resellers",
+      "reliability_claim": "Modeled estimate tier; no panel/POS claim observed",
+      "source_urls": [
+        "https://www.mordorintelligence.com/industry-reports/united-states-laundry-appliances-market-industry",
+        "https://www.mordorintelligence.com/industry-reports/united-states-major-home-appliances-market"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "YipitData",
+      "product": "Alternative-data research subscriptions (institutional)",
+      "what_you_get_for_laundry_centers": "No appliance/laundry-specific product observed; general model: institutional subscriptions, fees 'based on the scope and depth of data required'",
+      "granularity": "Ticker/company-level alt-data research; not category brand share",
+      "published_price": "quote-based ('has not published pricing information'; described as 'one of the most expensive datasets')",
+      "price_url": null,
+      "pricing_model": "Institutional subscription + bespoke engagements",
+      "reliability_claim": "Alt-data (web/transaction-derived) — not a retailer POS census",
+      "source_urls": [
+        "https://datarade.ai/data-providers/yipitdata/profile",
+        "https://www.trustradius.com/products/yipitdata-market-research/pricing"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "Earnest Analytics (part of Consumer Edge since April 2025)",
+      "product": "Orion / Vela Gamma consumer transaction datasets; Earnest Spend Index (free insights); Retail Pricing Web Data (also on Snowflake Marketplace)",
+      "what_you_get_for_laundry_centers": "Card-panel spend by merchant/brand ('credit and debit spend of millions of de-identified U.S. consumers'), retailer-level appliance-adjacent spend, plus web-scraped 'product availability and discounting data' from 'dozens of US online retailers'; no appliance brand-share POS observed",
+      "granularity": "Merchant/brand spend, near real-time; web pricing at product level for covered verticals",
+      "published_price": "quote-based",
+      "price_url": null,
+      "pricing_model": "Institutional data subscription; Snowflake Marketplace listing",
+      "reliability_claim": "Card-transaction panel (proxy, not POS census)",
+      "source_urls": [
+        "https://www.earnestanalytics.com/earnest-analytics-data",
+        "https://app.snowflake.com/marketplace/listing/GZSOZRN84/earnest-analytics-retail-pricing-web-data"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    },
+    {
+      "vendor": "M Science",
+      "product": "Data-driven research & alternative datasets for institutional investors/corporates",
+      "what_you_get_for_laundry_centers": "No appliance-specific offering observed; coverage claim: 'spans across 167 companies across US & EU Consumer and Industrials and US and China TMT'",
+      "granularity": "Company/ticker coverage; not category brand share",
+      "published_price": "quote-based",
+      "price_url": null,
+      "pricing_model": "Institutional subscription",
+      "reliability_claim": "Alt-data aggregation; no POS-census claim observed",
+      "source_urls": [
+        "https://mscience.com/",
+        "https://datarade.ai/data-providers/m-science/profile"
+      ],
+      "provenance": "search_snippet; accessed 2026-08-07"
+    }
+  ]
+}

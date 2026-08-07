@@ -1,0 +1,271 @@
+{
+  "_meta": {
+    "description": "US laundry-center category SKU matrix + adjacent single-SKU alternatives + absent brands",
+    "access_date": "2026-08-07",
+    "collection_method": "All provenance search_snippet (egress proxy blocked direct fetches to manufacturer/retailer domains). Fields null where no snippet showed the value.",
+    "data_conflicts_recorded": [
+      "Home Depot GUD27ESSMWW price: $1,549 (channel sweep snapshot) vs $1,398 was-$1,649 (SKU-matrix snapshot) — different search-cache vintages; both recorded, range used in report.",
+      "Home Depot GUD27ESSMWW review count: 13,209 (product page pool) vs 2,114 (a /p/reviews path snapshot) — likely different pool scopes; both recorded.",
+      "Frigidaire FLCE7522AW/FLCG7522AW dryer capacity appears as both 5.5 and 5.6 cu ft across retailers.",
+      "Samsung 'WH46DBH550EW' (initial hypothesis) not found anywhere; actual Hub SKUs are WH46DBH100EW/500EV/500GV, and they are VENTED, not ventless.",
+      "Whirlpool WET4024HW is a 23-7/8 in compact product, not 27 in."
+    ]
+  },
+  "sku_matrix": [
+    {
+      "brand": "GE", "model": "GUD27ESSMWW", "segment": "27in_full_size",
+      "width_inches": 26.75, "washer_capacity_cuft": 3.8, "washer_type": "top-load agitator, stainless steel basket",
+      "dryer_capacity_cuft": 5.9, "dryer_fuel": "electric", "venting": "vented (standard)",
+      "controls": "rotary electromechanical, 11 wash cycles, 6 temps, auto-load sensing, 800 RPM",
+      "MSRP_usd": 1749.00, "msrp_note": "geappliances.com regular price; clearance $1,574 shown there",
+      "street_price_usd": 1398.00, "street_price_where": "Home Depot snapshot (was $1,649); channel sweep also recorded $1,549 — conflict noted in _meta",
+      "rating": 4.2, "review_count": 2114, "rating_retailer": "Home Depot (/p/reviews path; product-page pool showed 13,209)",
+      "status": "active (GE site showed 'clearance' + temporarily out of stock; widely sold at HD/Lowe's/Best Buy)",
+      "sources": ["https://www.geappliances.com/appliance/GE-Unitized-Spacemaker-3-8-cu-ft-Capacity-Washer-with-Stainless-Steel-Basket-and-5-9-cu-ft-Capacity-Electric-Dryer-GUD27ESSMWW", "https://www.homedepot.com/p/reviews/GE-3-8-cu-ft-Washer-5-9-cu-ft-Electric-Dryer-Combo-in-White-GUD27ESSMWW/303516041/5", "https://www.bestbuy.com/site/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-electric-dryer-laundry-center-white/6175645.p"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "GE", "model": "GUD27GSSMWW", "segment": "27in_full_size",
+      "width_inches": 26.75, "washer_capacity_cuft": 3.8, "washer_type": "top-load agitator (same Unitized Spacemaker platform)",
+      "dryer_capacity_cuft": 5.9, "dryer_fuel": "gas (LP conversion kit available)", "venting": "vented (standard)",
+      "controls": "rotary electromechanical, 11 wash cycles, 6 temps, 800 RPM",
+      "MSRP_usd": 1849.00, "msrp_note": "regular prices observed $1,749 (Shore) and $1,849 (Mark's, Home Depot was-price)",
+      "street_price_usd": 1599.00, "street_price_where": "Shore Appliances; also HD $1,649 (was $1,849), Mark's $1,643.99",
+      "rating": 4.3, "review_count": 303, "rating_retailer": "Home Depot (a second source showed 4.2/184)",
+      "status": "active",
+      "sources": ["https://www.homedepot.com/p/reviews/GE-3-8-cu-ft-Washer-5-9-cu-ft-Gas-Dryer-Combo-in-White-GUD27GSSMWW/303516042/4", "https://www.shoreappliances.com/GE-GUD27GSSMWW-GE-Unitized-Spacemaker-3-8-cu-ft-Capacity-Washer-with-Stainless-Steel-Basket-and-5-9-cu-ft-Capacity-Gas-Dryer", "https://www.bestbuy.com/site/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-gas-dryer-laundry-center-white/6175646.p"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Whirlpool", "model": "WET4027HW", "segment": "27in_full_size",
+      "width_inches": 27, "washer_capacity_cuft": 3.5, "washer_type": "top-load dual-action agitator",
+      "dryer_capacity_cuft": 5.9, "dryer_fuel": "electric", "venting": "vented",
+      "controls": "9 wash cycles, AutoDry, fabric softener + bleach dispensers",
+      "MSRP_usd": 1699.00, "msrp_note": "'comparable value' observed",
+      "street_price_usd": 1621.69, "street_price_where": "unnamed retailer in snippet; Walmart listing exists",
+      "rating": 4.2, "review_count": 808, "rating_retailer": "Walmart",
+      "status": "active (whirlpool.com 'temporarily out of stock'; in stock at ABC Warehouse; predecessor WET4027EW discontinued)",
+      "sources": ["https://www.whirlpool.com/laundry/laundry-sets/washer-dryer-combination/p.WET4027HW.html", "https://www.walmart.com/ip/Whirlpool-WET4027HW-3-5-Cu-ft-Electric-Stacked-Laundry-Center-9-Wash-cycles-Auto-Dry-Depth-28-3-8-Height-40-1-2-Width-29-Soap-Certified-Xpert-System/910511160", "https://www.abcwarehouse.com/whirlpool-wet4027hw-27-laundry-center"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Whirlpool", "model": "WGT4027HW", "segment": "27in_full_size",
+      "width_inches": 27.25, "washer_capacity_cuft": 3.5, "washer_type": "top-load dual-action agitator; white porcelain basket",
+      "dryer_capacity_cuft": 5.9, "dryer_fuel": "gas", "venting": "vented",
+      "controls": "9 wash cycles, AutoDry, 4 dry cycles",
+      "MSRP_usd": 1799.00, "msrp_note": "Abt 'comparable value' $1,799; HD was-price $1,888 also observed",
+      "street_price_usd": 1549.00, "street_price_where": "Home Depot (was $1,888)",
+      "rating": 4.7, "review_count": 179, "rating_retailer": "Home Depot",
+      "status": "active",
+      "sources": ["https://www.whirlpool.com/laundry/laundry-sets/washer-dryer-combination/p.3.5-cu.ft-gas-stacked-laundry-center-9-wash-cycles-and-autodry.wgt4027hw.html", "https://www.homedepot.com/p/reviews/Whirlpool-White-Laundry-Center-with-3-5-cu-ft-Washer-and-5-9-cu-ft-Gas-Dryer-with-9-Wash-Cycles-and-AutoDry-WGT4027HW/304491791/1", "https://www.abt.com/Whirlpool-27-White-Gas-Stacked-Laundry-Center-With-9-Wash-Cycles-And-AutoDry-WGT4027HW/p/118907.html"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Whirlpool", "model": "WETLV27HW", "segment": "27in_full_size",
+      "width_inches": 27, "washer_capacity_cuft": 3.5, "washer_type": "top-load agitator (platform shared with WET4027HW)",
+      "dryer_capacity_cuft": 5.9, "dryer_fuel": "electric", "venting": "long-vent (up to 125 ft venting capability)",
+      "controls": "9 wash cycles, AutoDry",
+      "MSRP_usd": 1749.00, "msrp_note": "regular price at multiple dealers; one dealer showed $1,849",
+      "street_price_usd": 1574.10, "street_price_where": "dealer sale (range observed $1,484.97-$1,724.80); live at Lowes.com",
+      "rating": 4.1, "review_count": null, "rating_retailer": "shown in snippet without retailer attribution",
+      "status": "active",
+      "sources": ["https://www.lowes.com/pd/Whirlpool-Electric-Stacked-Laundry-Center-with-3-5-cu-ft-Washer-and-5-9-cu-ft-Dryer-White/1000373023", "https://www.whirlpool.com/laundry/laundry-sets/washer-dryer-combination/p.3.5-cu.ft-long-vent-electric-stacked-laundry-center-9-wash-cycles-and-autodry.wetlv27hw.html"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Whirlpool", "model": "WET4024HW", "segment": "24_compact",
+      "width_inches": 23.875, "washer_capacity_cuft": 1.6, "washer_type": "top-load impeller; EasyView glass lid",
+      "dryer_capacity_cuft": 3.4, "dryer_fuel": "electric", "venting": "vented",
+      "controls": "6 wash cycles, 4 dry cycles, AutoDry; auto bleach + softener dispensers",
+      "MSRP_usd": 1699.00, "msrp_note": "HD was-price",
+      "street_price_usd": 1399.00, "street_price_where": "Home Depot (also seen $1,248)",
+      "rating": 4.3, "review_count": 2224, "rating_retailer": "Home Depot",
+      "status": "active",
+      "sources": ["https://www.whirlpool.com/laundry/laundry-sets/washer-dryer-combination/p.1.6-cu.ft-electric-stacked-laundry-center-6-wash-cycles-and-autodry.wet4024hw.html", "https://www.homedepot.com/p/Whirlpool-1-6-cu-ft-Electric-Stacked-Laundry-Center-6-Wash-cycles-and-AutoDry-WET4024HW/304290535"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Frigidaire", "model": "FLCE7522AW", "segment": "27in_full_size",
+      "width_inches": 27, "washer_capacity_cuft": 3.9, "washer_type": "top-load (agitator referenced in reviews); 800 RPM max spin",
+      "dryer_capacity_cuft": 5.5, "dryer_capacity_note": "Frigidaire/Best Buy/HD say 5.5; AJ Madison/US Appliance/Walmart titles say 5.6 — conflict recorded",
+      "dryer_fuel": "electric", "venting": "vented (long-vent is separate SKU FLCE7523AW)",
+      "controls": "10 wash cycles, 6-10 dry cycles (sources vary), MaxFill, end-of-cycle signal",
+      "MSRP_usd": 1799.00, "msrp_note": "'comparable value'/everyday price observed at Weaver",
+      "street_price_usd": 1299.00, "street_price_where": "Plesser's; range $1,234.99 (Express Kitchens) to $1,599.97 (eBay); Walmart $1,397.36",
+      "rating": 4.3, "review_count": 2611, "rating_retailer": "Walmart (Best Buy also observed: 4.1/124)",
+      "status": "active",
+      "sources": ["https://www.frigidaire.com/en/p/laundry-care/laundry-centers/FLCE7522AW", "https://www.bestbuy.com/site/frigidaire-3-9-cu-ft-high-efficiency-top-load-washer-and-5-6-cu-ft-electric-dryer-laundry-center-white/6402456.p", "https://www.walmart.com/reviews/product/340864694"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Frigidaire", "model": "FLCG7522AW", "segment": "27in_full_size",
+      "width_inches": 27, "washer_capacity_cuft": 3.9, "washer_type": "top-load; 800 RPM max spin",
+      "dryer_capacity_cuft": 5.5, "dryer_capacity_note": "dealer titles 5.5; AJ Madison/HD titles 5.6 — conflict recorded; HD title also says 'Long Vent'",
+      "dryer_fuel": "gas", "venting": "vented; HD title advertises long vent for this gas SKU",
+      "controls": "10 wash cycles, 6 dry cycles, MaxFill, end-of-cycle beep",
+      "MSRP_usd": 1799.00, "msrp_note": "'comparable value' observed",
+      "street_price_usd": 1399.00, "street_price_where": "unnamed dealer; also $1,439.72 (Newegg), $1,549.95",
+      "rating": null, "review_count": null, "rating_retailer": null,
+      "status": "active",
+      "sources": ["https://www.abt.com/Frigidaire-27-White-Stacked-Washer-And-Gas-Dryer-Laundry-Center-FLCG7522AW/p/145301.html", "https://www.ajmadison.com/cgi-bin/ajmadison/FLCG7522AW.html"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Frigidaire", "model": "FLCE7523AW", "segment": "27in_full_size",
+      "width_inches": 27, "washer_capacity_cuft": 3.9, "washer_type": "top-load",
+      "dryer_capacity_cuft": 5.5, "dryer_fuel": "electric", "venting": "long-vent (127 ft vent design)",
+      "controls": "11 wash cycles, 10 dry cycles, Fast Wash/Fast Dry, MaxFill, end-of-cycle signal",
+      "MSRP_usd": 1649.99, "msrp_note": "Best Buy comparable value; dealer 'everyday price' $1,899 also observed",
+      "street_price_usd": 1348.00, "street_price_where": "Home Depot (was $1,649); Best Buy $1,349.99",
+      "rating": null, "review_count": null, "rating_retailer": null,
+      "status": "active at Best Buy/Home Depot; 'no longer sold on Lowes.com'",
+      "sources": ["https://www.bestbuy.com/site/frigidaire-3-9-cu-ft-washer-and-5-5-cu-ft-electric-dryer-laundry-center-with-long-vent-white/6503122.p", "https://www.frigidaire.com/en/p/owner-center/product-support/FLCE7523AW"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Crosley (GE Appliances rebadge)", "model": "XUD27ESSMWW", "segment": "27in_full_size",
+      "width_inches": null, "width_note": "GE twin GUD27ESSMWW is 26.75 in; Crosley width not directly observed",
+      "washer_capacity_cuft": 3.8, "washer_type": "top-load, heavy-duty agitator, stainless steel basket",
+      "dryer_capacity_cuft": 5.9, "dryer_fuel": "electric", "venting": "vented",
+      "controls": "11 wash cycles, 6 wash/rinse temps, auto-load sensing 4 water levels",
+      "MSRP_usd": null, "street_price_usd": 1649.00, "street_price_where": "independent dealers (Clayton Appliances, JH Appliance $1,649; Albert Lee $1,649.99) — dealer-channel product",
+      "rating": null, "review_count": null, "rating_retailer": null,
+      "status": "active (listed on geappliances.com and crosley.com; gas twin XUD27GSSMWW also observed at dealers)",
+      "sources": ["https://www.geappliances.com/appliance/Crosley-Unitized-Spacemaker-3-8-cu-ft-Capacity-Washer-with-Stainless-Steel-Basket-and-5-9-cu-ft-Capacity-Electric-Dryer-XUD27ESSMWW", "https://www.crosley.com/xud27essmww.html", "https://www.claytonappliance.com/product/crosley-97-cu-ft-white-stack-laundry-xud27essmww-300982"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "GE", "model": "GUD24ESSMWW", "segment": "24_compact",
+      "width_inches": 23.75, "washer_capacity_cuft": 2.3, "washer_type": "top-load; 830 RPM",
+      "dryer_capacity_cuft": 4.4, "dryer_fuel": "electric", "venting": "vented",
+      "controls": "rotary controls, 11-12 wash cycles (sources vary), auto-load sensing, cycle status light",
+      "MSRP_usd": 1699.00, "msrp_note": "HD was-price; another HD listing was $1,599",
+      "street_price_usd": 1499.00, "street_price_where": "Home Depot (also seen $1,529.10); Amazon listing exists",
+      "rating": 4.2, "review_count": 2542, "rating_retailer": "Walmart (per snippet)",
+      "status": "active at Home Depot/Best Buy; 'no longer sold on Lowes.com'",
+      "sources": ["https://www.ajmadison.com/cgi-bin/ajmadison/GUD24ESSMWW.html", "https://www.lowes.com/pd/GE-Stacked-Laundry-Center-with-2-3-cu-ft-Washer-and-4-4-cu-ft-Dryer-White/1000374213", "https://www.bestbuy.com/product/ge-2-3-cu-ft-top-load-washer-and-4-4-cu-ft-electric-dryer-laundry-center-white/J7645SJ58Q"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "GE", "model": "GUD24GSSMWW", "segment": "24_compact",
+      "width_inches": 24, "width_note": "nominal per US Appliance title",
+      "washer_capacity_cuft": 2.3, "washer_type": "top-load", "dryer_capacity_cuft": 4.4, "dryer_fuel": "gas",
+      "venting": "vented", "controls": "rotary electronic controls, 11 wash cycles",
+      "MSRP_usd": 1699.00, "msrp_note": "HD was-price", "street_price_usd": 1599.00, "street_price_where": "Home Depot",
+      "rating": null, "review_count": null, "rating_retailer": null, "status": "active",
+      "sources": ["https://www.homedepot.com/p/GE-2-3-cu-ft-Washer-4-4-cu-ft-Gas-Dryer-Combo-in-White-GUD24GSSMWW/303516040", "https://www.us-appliance.com/gud24gssmww.html"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "ConServ", "model": "CW 2240 + CD 4040 (T / MB)", "segment": "24_compact",
+      "caveat": "sold as one SKU and categorized by Lowe's as 'Stacked Laundry Center', but physically a two-piece stackable washer+condensing-dryer set, not a unitized cabinet",
+      "width_inches": null, "washer_capacity_cuft": 2.2, "washer_type": "front-load, 1400 RPM, 15 cycles incl. Steam/Sanitize",
+      "dryer_capacity_cuft": 4.0, "dryer_fuel": "electric (condensing)", "venting": "ventless (condensing)",
+      "controls": "LED display, 15+ cycles", "MSRP_usd": null,
+      "street_price_usd": 1949.00, "street_price_where": "Home Depot (CW2240+CD4040 T)",
+      "rating": null, "review_count": null, "rating_retailer": null,
+      "status": "active (ENERGY STAR listings at Lowe's)",
+      "sources": ["https://www.lowes.com/pd/ConServ-2-2-cu-ft-120V-Sani-washer-4-cu-ft-240V-Condenser-Sani-Dryer-Energy-Star-in-Titanium/5014872555", "https://www.homedepot.com/p/ConServ-LUXURY-Washer-2-2-cu-ft-110-Volt-plus-Condensing-Dryer-4-cu-ft-220-Volt-2-Year-Warranty-Europe-in-Titanium-CW2240-CD4040-T/332277268"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Equator", "model": "DW 835 + DD 860", "segment": "24_compact",
+      "caveat": "one-SKU 'Laundry Center' listing at Home Depot but physically a stackable washer + vented sensor dryer set, not unitized",
+      "width_inches": 24, "washer_capacity_cuft": 1.9, "washer_type": "front-load",
+      "dryer_capacity_cuft": 3.5, "dryer_fuel": "electric (110V)", "venting": "vented",
+      "controls": "digital touch", "MSRP_usd": null, "street_price_usd": null, "street_price_where": "price not shown in snippets",
+      "rating": null, "review_count": null, "rating_retailer": null, "status": "active listing",
+      "sources": ["https://homedepot.com/p/EQUATOR-ADVANCED-Appliances-24-in-Wide-110V-White-1-9-cu-ft-Laundry-Center-and-3-5-cu-ft-Dryer-Electric-DW-835-DD-860/316601145"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    }
+  ],
+  "adjacent_alternatives": [
+    {
+      "brand": "LG", "model": "WKEX200HWA (variants HBA black, HGA green)",
+      "what_it_is": "WashTower — single-unit stacked front-load washer + vented electric dryer with Center Control",
+      "segment": "adjacent_single_sku", "width_inches": 27, "washer_capacity_cuft": 4.5, "washer_type": "front-load",
+      "dryer_capacity_cuft": 7.4, "dryer_fuel": "electric", "venting": "vented (ventless heat-pump version is separate SKU WKHC252HWA, 4.5/7.2)",
+      "controls": "Center Control panel, ThinQ WiFi, AI Fabric Sensor, TurboWash 360",
+      "MSRP_usd": 2299.99, "msrp_note": "lg.com price; 'comparable value' $2,799 also observed",
+      "street_price_usd": 1897.00, "street_price_where": "Slyman Bros (reg $2,799); Plesser's $2,095; HD had WKEX200HBA at $2,099",
+      "rating": 4.6, "review_count": 2784, "rating_retailer": "Best Buy",
+      "why_it_competes": "Home Depot literally titles it 'LG WashTower Stacked SMART Laundry Center'; single-SKU stacked purchase competing for the same closet/footprint",
+      "status": "active (newer WKEX300-series with 5.0 cu ft washer also observed at Best Buy)",
+      "sources": ["https://www.lg.com/us/washers-dryers/lg-wkex200hwa-washtower", "https://www.bestbuy.com/site/reviews/lg-4-5-cu-ft-he-smart-front-load-washer-and-7-4-cu-ft-electric-dryer-washtower-with-steam-and-built-in-intelligence-white/6420308", "https://www.homedepot.com/p/LG-WashTower-Stacked-SMART-Laundry-Center-4-5-Cu-Ft-Front-Load-Washer-7-4-Cu-Ft-Electric-Dryer-in-White-w-Steam-WKEX200HWA/314755122"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "LG", "model": "WKGX201HWA", "what_it_is": "WashTower gas version",
+      "segment": "adjacent_single_sku", "width_inches": 27, "washer_capacity_cuft": 4.5, "washer_type": "front-load",
+      "dryer_capacity_cuft": 7.4, "dryer_fuel": "gas", "venting": "vented",
+      "MSRP_usd": 2749.00, "msrp_note": "Greentoe MSRP; Abt comp value $2,899",
+      "street_price_usd": 2195.00, "street_price_where": "Plesser's",
+      "rating": null, "review_count": null, "status": "active",
+      "sources": ["https://www.lg.com/us/washers-dryers/lg-wkgx201hwa-washtower", "https://www.plessers.com/lg/wkgx201hwa"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "LG", "model": "WKHC152HWA",
+      "what_it_is": "24-in Compact WashTower — single-unit stacked front-load washer + VENTLESS HEAT PUMP dryer (24 x 65.25 x 26 in)",
+      "segment": "adjacent_single_sku_24in", "width_inches": 24, "washer_capacity_cuft": 2.4, "washer_type": "front-load",
+      "dryer_capacity_cuft": 4.2, "dryer_fuel": "electric ventless heat pump", "venting": "ventless",
+      "MSRP_usd": 2749.00, "msrp_note": "dealer was-price; Lowe's showed $3,199 with $900 discount and Automatic NY showed was-$3,519 — wide variance recorded",
+      "street_price_usd": 1899.00, "street_price_where": "Appliance Depot Outlet / Smarter Appliance (sale from $2,749); at Lowe's, Costco, Best Buy",
+      "rating": null, "review_count": null,
+      "why_it_competes": "24-in single-SKU stacked footprint, no vent needed — directly answers the 24-in laundry-center buyer (GE GUD24/Whirlpool WET4024)",
+      "status": "active",
+      "sources": ["https://www.lowes.com/pd/LG-Washer-and-Dryer-Washtower/5014906267", "https://www.lg.com/us/washers-dryers/lg-wkhc152hwa-washtower", "https://www.costco.com/lg-washtower-single-unit-with-center-control-2.4-cu.-ft.-front-load-washer-and-4.2-cu.-ft.-electric-heat-pump-dryer-with-built-in-intelligence.product.4000272602.html"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "Samsung", "model": "WH46DBH100EW (white); WH46DBH500EV electric / WH46DBH500GV gas (brushed black)",
+      "what_it_is": "Bespoke AI Laundry Hub — single-unit stacked front-load washer + dryer, Easy Reach mid-tower control. Dryer is VENTED electric/gas ('3 Way Venting'), not ventless",
+      "segment": "adjacent_single_sku", "width_inches": 27, "dimensions_note": "27 x 74-7/16 x 31-3/8 in",
+      "washer_capacity_cuft": 4.6, "washer_type": "front-load (AI OptiWash, steam)",
+      "dryer_capacity_cuft": 7.6, "dryer_fuel": "electric (100/500EV) or gas (500GV)", "venting": "vented (3-way)",
+      "controls": "AI Smart Dial / Easy Reach panel, SmartThings WiFi, Flex Auto Dispense (500-series)",
+      "MSRP_usd": 2199.00, "msrp_note": "samsung.com for WH46DBH100EW; 500EV $2,699, 500GV $2,799",
+      "street_price_usd": 1899.99, "street_price_where": "Jetson (WH46DBH100EW, was $2,199.99)",
+      "rating": 4.7, "review_count": 46, "rating_retailer": "Walmart (WH46DBH500EV)",
+      "why_it_competes": "Lowe's lists it as 'Samsung Bespoke AI Laundry Hub Electric Stacked Laundry Center'; Reviewed's 2026 'Best Laundry Centers' ranks it #1",
+      "status": "active",
+      "sources": ["https://www.samsung.com/us/home-appliances/washers/stacked-washer-and-dryer/bespoke-4-6-cu-ft-ai-laundry-hub-large-capacity-single-unit-washer-with-steam-wash-and-7-6-cu-ft-electric-dryer-in-white-wh46dbh100ewa3/", "https://www.lowes.com/pd/Samsung-Bespoke-Laundry-Hub-large-capacity-4-6-cu-ft-Front-Load-washer-with-AI-Optiwash-and-Flex-Auto-Dispense-System-and-7-6-cu-ft-Electric-Dryer/5014904369", "https://www.ajmadison.com/cgi-bin/ajmadison/WH46DBH100EW.html"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    },
+    {
+      "brand": "GE Profile", "model": "PFQ97HSPVDS",
+      "what_it_is": "UltraFast 2-in-1 all-in-one combo — ONE drum washes and dries (ventless heat pump); half-height single box, not stacked",
+      "segment": "adjacent_single_sku_combo", "width_inches": 28, "dimensions_note": "46.7 H x 28 W x 32 D in",
+      "washer_capacity_cuft": 4.8, "washer_type": "front-load combo drum", "dryer_capacity_cuft": 4.8,
+      "dryer_fuel": "electric ventless heat pump", "venting": "ventless",
+      "controls": "smart electronic, WiFi, SmartDispense (32 loads), remote start",
+      "MSRP_usd": 2999.00, "msrp_note": "'comparable value' observed; Best Buy was-price $2,699.99",
+      "street_price_usd": 2099.99, "street_price_where": "Best Buy",
+      "rating": 4.2, "review_count": 1515, "rating_retailer": "Best Buy",
+      "why_it_competes": "single purchase, single 28-in footprint, no vent, ~2-hr wash+dry — removes the transfer step the laundry center still requires",
+      "status": "active",
+      "sources": ["https://www.bestbuy.com/site/ge-profile-ultrafast-4-8-cu-ft-high-efficiency-smart-combo-electric-washer-dryer-with-ventless-heat-pump-technology-carbon-graphite/6530134.p", "https://www.homedepot.com/p/GE-Profile-4-8-cu-ft-Smart-UltraFast-Electric-Washer-Dryer-Combo-in-Carbon-Graphite-with-Ventless-Heat-Pump-Technology-PFQ97HSPVDS/324668085"],
+      "provenance": "search_snippet", "access_date": "2026-08-07"
+    }
+  ],
+  "absent_brands": [
+    {"brand": "Samsung", "finding": "No traditional unitized top-load laundry center on samsung.com as of 2026-08-07; its single-unit stacked offering is the front-load Bespoke AI Laundry Hub.", "evidence": "https://www.samsung.com/us/home-appliances/washers/stacked-washer-and-dryer/bespoke-4-6-cu-ft-ai-laundry-hub-large-capacity-single-unit-washer-with-steam-wash-and-7-6-cu-ft-electric-dryer-in-white-wh46dbh100ewa3/"},
+    {"brand": "LG", "finding": "No traditional unitized laundry center on lg.com as of 2026-08-07; LG's entries are single-unit front-load WashTowers (27-in vented, 27-in heat-pump WKHC252H, 24-in WKHC152H).", "evidence": "https://www.lg.com/us/washers-dryers/lg-wkex200hwa-washtower"},
+    {"brand": "Maytag", "finding": "No laundry center on maytag.com as of 2026-08-07 — 'Stackable Washers and Dryers' page covers stackable pairs. Lowe's retains legacy stacked-laundry-center product pages (very old IDs); current purchasability unverified. Maytag Commercial sells coin/commercial stack units.", "evidence": "https://www.maytag.com/washers-and-dryers/stackable-laundry.html"},
+    {"brand": "Amana", "finding": "No laundry center found on amana.com or in retailer searches as of 2026-08-07 — only top-load washer + dryer pairs.", "evidence": "https://www.amana.com/laundry/dryers/top-load/p.6.5-cu.-ft.-electric-dryer-with-wrinkle-prevent-option.ned4655ew.html"},
+    {"brand": "Hotpoint", "finding": "No laundry center found in Hotpoint listings at Lowe's/Home Depot/hotpoint.com as of 2026-08-07 — pairs only.", "evidence": "https://www.hotpoint.com/washer-dryer/"},
+    {"brand": "Conservator (Crosley trademark)", "finding": "No unitized laundry center as of 2026-08-07 — only washer/dryer pairs via rent-to-own dealers. (Crosley itself DOES sell the GE-built XUD27 laundry centers.)", "evidence": "https://www.mikesrenttoown.com/appliances-826/laundry-844/washers-851/dryers-852/laundry-pairs/coservator-by-crosley-washer-and-dryer-set-3406"},
+    {"brand": "Magic Chef", "finding": "No currently-sold unitized laundry center as of 2026-08-07; legacy models appear only as Sears PartsDirect parts listings; current products are all-in-one combos.", "evidence": "https://www.searspartsdirect.com/model/gbtgq2ra69-001429/magic-chef-mcscwd27w5-laundry-center-parts"},
+    {"brand": "Black+Decker", "finding": "No laundry center as of 2026-08-07 — only a stacking rack stand for its portable units.", "evidence": "search-context result"},
+    {"brand": "Summit", "finding": "No unitized laundry center as of 2026-08-07 — sells 24-in all-in-one combos (SPWD2202W/SPWD2203P) and a stackable washer + heat-pump dryer PAIR (SLS24W3P).", "evidence": "https://www.summitappliance.com/catalog/model/SPWD2202W"},
+    {"brand": "Equator", "finding": "Despite a Home Depot 'Equator Laundry Centers' category, Equator's EZ-series are single-drum all-in-one combos and its 'laundry center' listings are stackable two-piece sets — no unitized cabinet found as of 2026-08-07.", "evidence": "https://www.pcrichard.com/equator-24-in-1.6-cu-ft-electric-front-load-ventless-all-in-one-laundry-center-with-sanitize-cycle-and-sensor-dry-white/EZ4700CW.html"}
+  ],
+  "category_observations": [
+    {"observation": "Category price band (Lowe's 'Stacked Laundry Centers'): typical price $1,878, range ~$1,298-$3,099; LG, GE, Whirlpool called most popular brands — i.e., Lowe's now counts WashTowers inside the laundry-center category.", "url": "https://www.lowes.com/pl/washers-dryers/stacked-laundry-centers/4294791544"},
+    {"observation": "Traditional 27-in centers cluster ~$1,300-$1,650 street: GE electric $1,398-1,549, Whirlpool gas $1,549 (was $1,888), Frigidaire long-vent $1,348-1,349.99; adjacent single-unit towers sit one tier up at $1,897-$2,799.", "url": "see sku rows"},
+    {"observation": "Discontinuations observed: Whirlpool WET4027EW discontinued (replaced by WET4027HW); WET4027HW 'temporarily out of stock' on whirlpool.com; GE GUD24ESSMWW and Frigidaire FLCE7523AW both 'no longer sold on Lowes.com' while active at HD/Best Buy.", "url": "https://www.designerappliances.com/whirlpool-wet4027ew.html"},
+    {"observation": "Retail taxonomy has merged the segments: Home Depot titles the LG unit 'LG WashTower Stacked SMART Laundry Center'; Lowe's titles Samsung's unit 'Bespoke AI Laundry Hub Electric Stacked Laundry Center'.", "url": "https://www.homedepot.com/p/LG-WashTower-Stacked-SMART-Laundry-Center-4-5-Cu-Ft-Front-Load-Washer-7-4-Cu-Ft-Electric-Dryer-in-White-w-Steam-WKEX200HWA/314755122"},
+    {"observation": "Review-base asymmetry: legacy centers carry thousands of reviews (GE GUD27 4.2/2,114 HD; Whirlpool WET4024HW 4.3/2,224 HD; Frigidaire FLCE7522AW 4.3/2,611 Walmart) vs Samsung Hub 4.7/46 at Walmart; LG WashTower already 4.6/2,784 (Best Buy).", "url": "see sku rows"},
+    {"observation": "Editorial pressure: Reviewed's '6 Best Laundry Centers of 2026' puts Samsung Bespoke Hub and LG WashTower at the top of the laundry-center ranking, with GE/Whirlpool/Frigidaire unitized units positioned as budget picks.", "url": "https://www.reviewed.com/laundry/best-right-now/the-best-laundry-centers"}
+  ]
+}

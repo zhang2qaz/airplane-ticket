@@ -1,0 +1,120 @@
+{
+  "_meta": {
+    "description": "GE GUD27ESSMWW review mining — per-platform ratings/counts, praise & complaint themes with attributed quotes",
+    "access_date": "2026-08-07",
+    "collection_method": "All provenance search_snippet (egress proxy blocked every page fetch). Star distributions, reviewer handles, and review dates render only on-page and were unobtainable. Quotes marked 'digest' are as rendered by the search tool; two marked direct quotes were presented verbatim in quotation marks.",
+    "conflicts_excluded": "One snippet said the unit 'includes both a bleach dispenser and a fabric softener dispenser' while another said 'no fabric softener dispenser' (possibly the GUV27 sibling) — unresolved, omitted.",
+    "amazon_note": "Amazon carries the unit (B07BDRM9DN) but no rating surfaced in snippets."
+  },
+  "platforms": [
+    {
+      "platform": "Home Depot",
+      "url": "https://www.homedepot.com/p/GE-White-Laundry-Center-3-8-cu-ft-Washer-and-5-9-cu-ft-240-Volt-Vented-Electric-Dryer-GUD27ESSMWW/303516041",
+      "rating": 4.2,
+      "review_count": "~13,027 (snippets ranged 12,974-13,202)",
+      "star_distribution": null,
+      "access_status": "direct fetch egress-blocked; via search_snippet 2026-08-07"
+    },
+    {
+      "platform": "Lowe's",
+      "url": "https://www.lowes.com/pd/GE-Stacked-Laundry-Center-with-3-8-cu-ft-Washer-and-5-9-cu-ft-Dryer-White/1000374215",
+      "rating": "4.2 (item 1000374215, 12,668 reviews) and 4.4 (item 5005489985, 7,568 reviews) — two listings observed",
+      "review_count": "12,668 / 7,568 (two Lowe's listings)",
+      "star_distribution": null,
+      "access_status": "direct fetch egress-blocked; via search_snippet 2026-08-07"
+    },
+    {
+      "platform": "Best Buy",
+      "url": "https://www.bestbuy.com/site/reviews/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-electric-dryer-laundry-center-white/6175645",
+      "rating": 4.2,
+      "review_count": "1,269-1,385 (two snapshot values)",
+      "star_distribution": null,
+      "access_status": "direct fetch egress-blocked; via search_snippet 2026-08-07"
+    },
+    {
+      "platform": "Walmart",
+      "url": "https://www.walmart.com/reviews/product/681329704",
+      "rating": 4.3,
+      "review_count": "9,740-9,976 (three snapshot values: 9,740 / 9,755 / 9,976)",
+      "star_distribution": null,
+      "access_status": "direct fetch egress-blocked; via search_snippet 2026-08-07"
+    },
+    {
+      "platform": "Costco",
+      "url": "https://www.costco.com/ge-unitized-spacemaker-3.8-cu.-ft.-washer-and-5.9-cu.-ft.-electric-dryer.product.100399726.html",
+      "rating": 4.0,
+      "review_count": 984,
+      "star_distribution": null,
+      "access_status": "direct fetch egress-blocked; via search_snippet 2026-08-07; snippet notes Costco price 'includes delivery and installation, haul away... and a 2-year warranty'"
+    },
+    {
+      "platform": "GE Appliances (geappliances.com)",
+      "url": "https://www.geappliances.com/appliance/GE-Unitized-Spacemaker-3-8-cu-ft-Capacity-Washer-with-Stainless-Steel-Basket-and-5-9-cu-ft-Capacity-Electric-Dryer-GUD27ESSMWW",
+      "rating": null,
+      "review_count": null,
+      "star_distribution": null,
+      "access_status": "product page exists but rating never surfaced in snippets; direct fetch egress-blocked — inaccessible this session"
+    }
+  ],
+  "praise_themes": [
+    {
+      "theme": "Fits tight spaces (closet/apartment/bathroom)",
+      "evidence_quotes": [
+        {"quote": "fits perfectly", "note": "exact phrase verified via quoted-phrase search hits; variants: 'fits perfectly in their master bathroom', 'dimensions are spot on'", "platform": "Best Buy reviews / P.C. Richard", "url": "https://www.bestbuy.com/site/reviews/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-electric-dryer-laundry-center-white/6175645"},
+        {"quote": "It saves a huge amount of space", "platform": "Walmart reviews (per search digest)", "url": "https://www.walmart.com/reviews/product/681329704"}
+      ]
+    },
+    {
+      "theme": "Simple controls / ease of use",
+      "evidence_quotes": [
+        {"quote": "easy to use and does a good job of getting clothes clean and spins very dry", "platform": "Walmart reviews", "url": "https://www.walmart.com/reviews/product/681329704"}
+      ]
+    },
+    {
+      "theme": "Wash/dry performance and speed",
+      "evidence_quotes": [
+        {"quote": "The dryer is very fast acting and runs quietly without vibrating the house", "platform": "Walmart reviews (per search digest)", "url": "https://www.walmart.com/reviews/product/681329704"},
+        {"quote": "clothes come out clean and the cycle doesn't run for an excessively long time", "platform": "Walmart reviews (digest paraphrase)", "url": "https://www.walmart.com/reviews/product/681329704"}
+      ]
+    },
+    {
+      "theme": "Adjustability for its class",
+      "evidence_quotes": [
+        {"quote": "the most customizability in its class, having several options for adjusting temperature and water levels", "platform": "Reviewed.com product page (digest)", "url": "https://www.reviewed.com/laundry/products/ge-gud27essmww"}
+      ]
+    }
+  ],
+  "complaint_themes": [
+    {
+      "theme": "Noise / vibration during spin",
+      "evidence_quotes": [
+        {"quote": "the washer can be a little noisy", "platform": "Best Buy reviews (digest)", "url": "https://www.bestbuy.com/site/reviews/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-electric-dryer-laundry-center-white/6175645"},
+        {"quote": "shakes and wobbles and makes sounds that are alarming (digest paraphrase)", "platform": "Home Depot reviews pg 5", "url": "https://www.homedepot.com/p/reviews/GE-3-8-cu-ft-Washer-5-9-cu-ft-Electric-Dryer-Combo-in-White-GUD27ESSMWW/303516041/5"}
+      ]
+    },
+    {
+      "theme": "Cycle annoyances: long spin, no end-of-cycle buzzer",
+      "evidence_quotes": [
+        {"quote": "I like everything about it except these 2 things: spin cycle too long and no buzzer notification at the end of the washing cycle or the dryer cycle.", "platform": "Walmart/Best Buy review pages (digest presents as direct quote)", "url": "https://www.walmart.com/reviews/product/681329704"},
+        {"quote": "A dryer buzzer would be great", "platform": "Walmart/Best Buy review pages (digest)", "url": "https://www.bestbuy.com/site/reviews/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-electric-dryer-laundry-center-white/6175645"}
+      ]
+    },
+    {
+      "theme": "Early failures / reliability (DOA units, service calls)",
+      "evidence_quotes": [
+        {"quote": "On the first wash load, the washer made a grinding noise and shut down mid-cycle... by day three, the dryer stopped working completely (digest near-verbatim)", "platform": "Home Depot reviews pg 5", "url": "https://www.homedepot.com/p/reviews/GE-3-8-cu-ft-Washer-5-9-cu-ft-Electric-Dryer-Combo-in-White-GUD27ESSMWW/303516041/5"},
+        {"quote": "an unsecured metal part about 12\" by 4\"... sticking out of the laundry drum after one of the initial loads (digest near-verbatim)", "platform": "Home Depot reviews pg 5", "url": "https://www.homedepot.com/p/reviews/GE-3-8-cu-ft-Washer-5-9-cu-ft-Electric-Dryer-Combo-in-White-GUD27ESSMWW/303516041/5"},
+        {"quote": "3.5 month old GE GUD27ESSMWW isn't working (title text)", "platform": "JustAnswer thread title (owner complaint)", "url": "https://www.justanswer.com/appliance/f3n7p-3-5-month-old-ge-gud27essmww-isn-t-working.html"}
+      ]
+    },
+    {
+      "theme": "Real installed depth exceeds specs (venting/electrical clearance)",
+      "evidence_quotes": [
+        {"quote": "the vent hose and electrical box add about 4\" to the actual depth (digest near-verbatim)", "platform": "review digest (sources incl. Best Buy/canadianappliance.ca)", "url": "https://www.bestbuy.com/site/reviews/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-electric-dryer-laundry-center-white/6175645"},
+        {"quote": "very hard to fit because the duct only goes straight out the back (digest paraphrase)", "platform": "review digest (same source set)", "url": "https://www.walmart.com/reviews/product/681329704"}
+      ]
+    }
+  ],
+  "pattern_notes": "No review dates visible in snippets, so no recency trend can be claimed. Costco's native rating (4.0/984) runs below the 4.2-4.4 seen on the big syndicated pools. A Best Buy Q&A title 'Installed new GUD27ESSM1WW 4 days ago...' and a PartSelect 'Noisy' symptom page corroborate noise/early-failure themes.",
+  "syndication_observation": "No explicit 'originally posted on...' text observed (targeted search returned nothing). However, counts strongly suggest a shared/syndicated pool: Home Depot ~13.0k @4.2 and Lowe's item 1000374215 = 12,668 @4.2 nearly identical, Walmart ~9.7-10k @4.3 same order of magnitude, while Best Buy (~1.3k) and Costco (984) hold much smaller, likely native pools. Review-count drift across snippets reflects different crawl dates."
+}
