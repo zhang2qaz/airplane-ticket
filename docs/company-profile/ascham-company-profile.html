@@ -130,6 +130,14 @@
   .value .t { font-size: 8.6pt; font-weight: 700; letter-spacing: -.005em; }
   .value .d { font-size: 7.4pt; color: var(--slate); line-height: 1.5; margin-top: 1mm; }
 
+  .factfile { border: 1px solid var(--line); border-radius: 3.5mm; padding: 4.6mm 5.5mm 4.4mm; background: var(--tile); }
+  .factfile .ft { display: flex; align-items: center; gap: 2.6mm; font-size: 7pt; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--slate-2); margin-bottom: 3.2mm; }
+  .factfile .ft svg { width: 4.4mm; height: 4.4mm; color: var(--indigo); }
+  .factfile .ff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 7mm; }
+  .factfile .kv .k { font-size: 6.2pt; letter-spacing: .16em; text-transform: uppercase; color: var(--slate-2); }
+  .factfile .kv .v { font-size: 8.4pt; font-weight: 600; margin-top: .9mm; }
+  .factfile .kv .v small { font-weight: 500; color: var(--slate); font-size: 7pt; }
+
   /* ================= TIMELINE ================= */
   .tl-head { position: absolute; top: 30mm; left: 16mm; right: 16mm; }
   .tl-head h2 { font-size: 24.5pt; font-weight: 500; letter-spacing: -.02em; margin-top: 6mm; }
@@ -384,8 +392,8 @@
     <div class="cover-facts">
       <div class="f"><div class="k">Flagship Product</div><div class="v">Competitor IQ<span class="lm"> ●</span></div></div>
       <div class="f"><div class="k">In R&amp;D Since</div><div class="v">2024</div></div>
-      <div class="f"><div class="k">Trusted Across</div><div class="v">6 industries · 3 continents</div></div>
-      <div class="f"><div class="k">Reach Us</div><div class="v">ascham.io</div></div>
+      <div class="f"><div class="k">Headquarters</div><div class="v">New York, NY</div></div>
+      <div class="f"><div class="k">Reach Us</div><div class="v">ascham.me</div></div>
     </div>
   </div>
 </div>
@@ -404,14 +412,15 @@
       <p>Most software companies are founded first and go looking for a product afterwards.
       Ascham did it the other way around. Our founding team — senior engineers and product
       leaders from global technology companies — spent <b>two full years in R&amp;D</b>
-      building Competitor&nbsp;IQ before Ascham was formally incorporated in 2026.</p>
+      building Competitor&nbsp;IQ before Ascham&nbsp;Inc. was formally incorporated in the
+      United States in 2026, headquartered in New York.</p>
       <p>That sequence shaped everything about us. Our engineering standards were forged
       <b>in production, with live enterprise pilots</b> — not in slide decks. When we
       incorporated, we already had a hardened platform, a proven delivery practice, and
       pilot customers who had renewed twice.</p>
       <div class="quote-band">
         <div class="q">“We built the product first, and the company second. New clients get the maturity of the former and the hunger of the latter.”</div>
-        <div class="a">Founding Team — Ascham</div>
+        <div class="a">Kevin Zhang · Founder — Ascham Inc.</div>
       </div>
     </div>
 
@@ -438,6 +447,15 @@
         <div class="value">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
           <div><div class="t">Outcome-driven</div><div class="d">We commit to shipped, measured results — not billable hours.</div></div>
+        </div>
+      </div>
+      <div class="factfile">
+        <div class="ft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>Corporate fact file</div>
+        <div class="ff-grid">
+          <div class="kv"><div class="k">Legal Entity</div><div class="v">Ascham Inc. <small>· U.S. corporation</small></div></div>
+          <div class="kv"><div class="k">Federal EIN (IRS)</div><div class="v">42-3072688 <small>· issued Jun 2026</small></div></div>
+          <div class="kv"><div class="k">Headquarters</div><div class="v">New York, NY, United States</div></div>
+          <div class="kv"><div class="k">Origins</div><div class="v">Incorporated 2026 <small>· in R&amp;D since 2024</small></div></div>
         </div>
       </div>
     </div>
@@ -505,9 +523,9 @@
     <div class="tl-col" style="left:76.8%">
       <div class="tl-node" style="left:0; border-color:#9BC53D"></div>
       <div class="tl-card tl-up" style="position:absolute; width:100%;">
-        <div class="yr">2026<span>Q1</span></div>
-        <div class="tt">Ascham incorporates</div>
-        <div class="dd">The company forms around the proven product — carrying its engineering standards into client work from day one.</div>
+        <div class="yr">2026<span>Q2</span></div>
+        <div class="tt">Ascham Inc. incorporates</div>
+        <div class="dd">The company forms in the United States around the proven product — federal EIN issued in June, operations standing up in New York.</div>
       </div>
     </div>
 
@@ -685,7 +703,7 @@
       <line x1="0.5" y1="34.5" x2="979.5" y2="34.5" stroke="#E4E9F2"/>
       <circle cx="22" cy="17.5" r="4.5" fill="#E1E6EF"/><circle cx="38" cy="17.5" r="4.5" fill="#E1E6EF"/><circle cx="54" cy="17.5" r="4.5" fill="#E1E6EF"/>
       <rect x="330" y="8" width="320" height="19" rx="9.5" fill="#fff" stroke="#E4E9F2"/>
-      <g font-family="Inter" font-size="10" fill="#8A93A8"><text x="490" y="21" text-anchor="middle">app.competitoriq.ai/radar</text></g>
+      <g font-family="Inter" font-size="10" fill="#8A93A8"><text x="490" y="21" text-anchor="middle">iq.ascham.me/radar</text></g>
 
       <!-- sidebar -->
       <path d="M0.5 35 H186 V559.5 H14.5 a14 14 0 0 1 -14 -14 Z" fill="#0B0F1C"/>
@@ -1076,9 +1094,9 @@
       your categories, your first executive digest within two weeks. Or talk to us about
       an engineering engagement with the team that built it.</p>
       <div class="bc-contact">
-        <div class="c"><div class="k">Email</div><div class="v">hello@ascham.io</div></div>
-        <div class="c"><div class="k">Web</div><div class="v">ascham.io</div></div>
-        <div class="c"><div class="k">Product</div><div class="v">competitoriq.ai</div></div>
+        <div class="c"><div class="k">Email</div><div class="v">hello@ascham.me</div></div>
+        <div class="c"><div class="k">Web</div><div class="v">ascham.me</div></div>
+        <div class="c"><div class="k">Headquarters</div><div class="v">New York, NY</div></div>
       </div>
     </div>
     <div class="bc-foot">
@@ -1086,7 +1104,7 @@
         <svg viewBox="0 0 40 40"><rect x="1" y="1" width="38" height="38" rx="11" fill="url(#gMark)"/><path d="M11.5 28.5 L20 12 L28.5 28.5 M15.4 22.5 H24.6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="31.5" cy="9.5" r="3" fill="#C9F24E"/></svg>
         <span class="word">ascham</span>
       </div>
-      <div class="fine">© 2026 Ascham. All rights reserved. Company Profile — August 2026.<br>
+      <div class="fine">© 2026 Ascham Inc. — a U.S. corporation, New York, NY · Federal EIN 42-3072688 · Company Profile — August 2026.<br>
       All third-party names, marks and logos are the property of their respective owners and are shown as simplified monochrome wordmarks.</div>
     </div>
   </div>
