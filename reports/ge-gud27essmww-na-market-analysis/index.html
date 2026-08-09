@@ -1,0 +1,1293 @@
+<title>GE GUD27ESSMWW · 北美一体式洗衣中心市场分析</title>
+<style>
+  :root {
+    color-scheme: light;
+    --plane: #f9f9f7;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --muted: #898781;
+    --hairline: #e1e0d9;
+    --baseline: #c3c2b7;
+    --border: rgba(11, 11, 11, 0.10);
+    --accent-text: #1c5cab;
+    --accent-soft: #cde2fb;
+    --s1: #2a78d6;
+    --s2: #eb6834;
+    --s3: #1baf7a;
+    --resid: #c3c2b7;
+    --seg-ink-on-fill: #ffffff;
+    --good-text: #006300;
+    --warn-bg: #fdf6e8;
+    --warn-border: #eda100;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --plane: #0d0d0d;
+      --surface: #1a1a19;
+      --ink: #ffffff;
+      --ink-2: #c3c2b7;
+      --muted: #898781;
+      --hairline: #2c2c2a;
+      --baseline: #383835;
+      --border: rgba(255, 255, 255, 0.10);
+      --accent-text: #86b6ef;
+      --accent-soft: #184f95;
+      --s1: #3987e5;
+      --s2: #d95926;
+      --s3: #199e70;
+      --resid: #52514e;
+      --good-text: #0ca30c;
+      --warn-bg: #26200f;
+      --warn-border: #c98500;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --plane: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #ffffff;
+    --ink-2: #c3c2b7;
+    --muted: #898781;
+    --hairline: #2c2c2a;
+    --baseline: #383835;
+    --border: rgba(255, 255, 255, 0.10);
+    --accent-text: #86b6ef;
+    --accent-soft: #184f95;
+    --s1: #3987e5;
+    --s2: #d95926;
+    --s3: #199e70;
+    --resid: #52514e;
+    --good-text: #0ca30c;
+    --warn-bg: #26200f;
+    --warn-border: #c98500;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--plane);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+    font-size: 15px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-text); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover, a:focus-visible { border-bottom-color: var(--accent-text); }
+  a:focus-visible, [tabindex="0"]:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent-text); outline-offset: 2px; border-radius: 2px;
+  }
+
+  .doc { max-width: 1080px; margin: 0 auto; padding: 0 20px 96px; }
+  .prose { max-width: 800px; }
+  .prose p { margin: 0 0 1em; color: var(--ink); }
+  .prose p.dim, p.dim { color: var(--ink-2); }
+
+  /* ---------- Cover ---------- */
+  .cover { padding: 64px 0 36px; border-bottom: 2px solid var(--ink); }
+  .eyebrow {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-text); font-weight: 600; margin: 0 0 14px;
+  }
+  .cover h1 {
+    font-size: clamp(26px, 4.5vw, 38px); line-height: 1.35; margin: 0 0 14px;
+    font-weight: 700; letter-spacing: 0.01em; text-wrap: balance; max-width: 860px;
+  }
+  .cover .sub { font-size: 16px; color: var(--ink-2); margin: 0 0 26px; max-width: 760px; text-wrap: balance; }
+  .cover .meta {
+    display: flex; flex-wrap: wrap; gap: 8px 22px;
+    font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--hairline); padding-top: 14px;
+  }
+  .cover .meta b { color: var(--ink-2); font-weight: 600; }
+
+  /* ---------- TOC ---------- */
+  .toc {
+    position: sticky; top: 0; z-index: 40;
+    background: var(--plane);
+    border-bottom: 1px solid var(--hairline);
+    margin: 0 -20px; padding: 0 20px;
+  }
+  .toc-inner {
+    display: flex; gap: 4px; overflow-x: auto; padding: 8px 0;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .toc-inner::-webkit-scrollbar { display: none; }
+  .toc a {
+    flex: 0 0 auto; font-size: 12.5px; color: var(--ink-2); padding: 4px 10px;
+    border: 1px solid transparent; border-radius: 999px; white-space: nowrap;
+  }
+  .toc a:hover { border-color: var(--hairline); color: var(--ink); }
+
+  /* ---------- Sections ---------- */
+  section.chap { padding-top: 40px; margin-top: 24px; }
+  .chap-head { border-top: 1px solid var(--ink); padding-top: 14px; margin-bottom: 22px; }
+  .chap-head .no {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600; display: block; margin-bottom: 6px;
+  }
+  .chap-head h2 { font-size: 24px; margin: 0; line-height: 1.4; font-weight: 700; text-wrap: balance; }
+  .chap-head .lede { color: var(--ink-2); margin: 10px 0 0; max-width: 800px; font-size: 15px; }
+  h3 { font-size: 17.5px; margin: 34px 0 10px; font-weight: 700; }
+  h4 { font-size: 15px; margin: 22px 0 8px; font-weight: 700; }
+
+  /* ---------- KPI tiles ---------- */
+  .kpis {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+    gap: 10px; margin: 28px 0 8px;
+  }
+  .tile {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    padding: 14px 16px 12px;
+  }
+  .tile .k { font-size: 12px; color: var(--muted); margin: 0 0 4px; }
+  .tile .v { font-size: 24px; font-weight: 650; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+  .tile .d { font-size: 12px; color: var(--ink-2); margin: 4px 0 0; }
+
+  /* ---------- Exhibit card ---------- */
+  .exhibit {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 20px 22px 16px; margin: 26px 0;
+  }
+  .ex-no {
+    font-size: 11px; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--accent-text); font-weight: 700; margin: 0 0 4px;
+  }
+  .ex-title { font-size: 16.5px; font-weight: 700; margin: 0 0 2px; line-height: 1.45; }
+  .ex-sub { font-size: 13px; color: var(--ink-2); margin: 0 0 18px; }
+  .ex-src {
+    font-size: 12px; color: var(--muted); border-top: 1px solid var(--hairline);
+    margin-top: 16px; padding-top: 10px; line-height: 1.7;
+  }
+  .ex-note { font-size: 12.5px; color: var(--ink-2); margin: 12px 0 0; line-height: 1.7; }
+
+  /* ---------- CSS bar charts ---------- */
+  .bars { display: grid; gap: 9px; }
+  .brow { display: grid; grid-template-columns: 190px 1fr 88px; gap: 12px; align-items: center; }
+  .blab { font-size: 13px; color: var(--ink-2); line-height: 1.35; text-align: right; }
+  .blab small { color: var(--muted); font-size: 11.5px; display: block; }
+  .btrack { position: relative; height: 20px; display: flex; align-items: center; }
+  .bfill {
+    height: 18px; border-radius: 0 4px 4px 0; background: var(--s1);
+    min-width: 2px; position: relative;
+  }
+  .bfill.s2 { background: var(--s2); }
+  .bfill.s3 { background: var(--s3); }
+  .bfill.resid { background: var(--resid); }
+  .bval { font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 600; white-space: nowrap; }
+  .bval small { color: var(--muted); font-weight: 400; }
+  .baseline-rule { border-left: 1px solid var(--baseline); }
+  .refrow { display: grid; grid-template-columns: 190px 1fr 88px; gap: 12px; align-items: center; margin-bottom: 2px; }
+  .reftrack { position: relative; height: 16px; }
+  .reftick { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--baseline); }
+  .reflab { font-size: 11.5px; color: var(--muted); white-space: nowrap; position: absolute; top: -2px; transform: translateX(-100%); padding-right: 6px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 14px; font-size: 12.5px; color: var(--ink-2); }
+  .legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 6px; }
+  .legend .ln { display: inline-block; width: 16px; height: 3px; border-radius: 2px; vertical-align: 3px; margin-right: 6px; }
+
+  /* paired bars */
+  .pair-group { display: grid; gap: 4px; margin-bottom: 12px; }
+  .pair-name { font-size: 13px; font-weight: 600; color: var(--ink); margin: 8px 0 2px; }
+
+  /* 100% stacked */
+  .stack-block { margin-bottom: 20px; }
+  .stack-cap { font-size: 13px; font-weight: 600; margin: 0 0 6px; color: var(--ink); }
+  .stack { display: flex; gap: 2px; height: 24px; border-radius: 4px; overflow: hidden; }
+  .seg { display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; color: var(--seg-ink-on-fill); min-width: 0; }
+  .seg.resid { color: var(--ink-2); }
+  .stack-src { font-size: 12px; color: var(--muted); margin-top: 5px; }
+
+  /* ---------- Tables ---------- */
+  .tbl-wrap { overflow-x: auto; margin: 14px 0; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; min-width: 700px; }
+  thead th {
+    text-align: left; font-size: 12px; color: var(--ink-2); font-weight: 600;
+    border-bottom: 1px solid var(--baseline); padding: 10px 12px; white-space: nowrap;
+    background: var(--surface); position: sticky; top: 0;
+  }
+  tbody td { padding: 9px 12px; border-bottom: 1px solid var(--hairline); vertical-align: top; line-height: 1.6; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .sm, .sm { font-size: 12px; color: var(--muted); }
+  tr.hl td { background: color-mix(in srgb, var(--accent-soft) 30%, transparent); }
+
+  details.dtable { margin-top: 12px; }
+  details.dtable summary {
+    cursor: pointer; font-size: 12.5px; color: var(--accent-text); font-weight: 600;
+    list-style: none; display: inline-flex; align-items: center; gap: 6px;
+  }
+  details.dtable summary::before { content: "▸"; font-size: 11px; transition: transform 0.15s; }
+  details.dtable[open] summary::before { transform: rotate(90deg); }
+  @media (prefers-reduced-motion: reduce) { details.dtable summary::before { transition: none; } }
+
+  /* ---------- Callouts ---------- */
+  .callout {
+    border: 1px solid var(--warn-border); background: var(--warn-bg);
+    border-radius: 8px; padding: 14px 18px; margin: 18px 0; font-size: 13.5px; line-height: 1.8;
+    max-width: 800px;
+  }
+  .callout b { font-weight: 700; }
+  .findings { counter-reset: kf; display: grid; gap: 14px; margin: 24px 0; max-width: 860px; }
+  .finding {
+    display: grid; grid-template-columns: 44px 1fr; gap: 14px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px;
+  }
+  .finding .n {
+    counter-increment: kf; font-size: 20px; font-weight: 700; color: var(--accent-text);
+    font-variant-numeric: tabular-nums; line-height: 1.3;
+  }
+  .finding .n::before { content: counter(kf, decimal-leading-zero); }
+  .finding h4 { margin: 0 0 4px; font-size: 14.5px; }
+  .finding p { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.75; }
+
+  .quote-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0; }
+  @media (max-width: 720px) { .quote-cols { grid-template-columns: 1fr; } }
+  .qcol { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+  .qcol h4 { margin: 0 0 10px; font-size: 14px; }
+  .qcol .theme { margin: 0 0 14px; }
+  .qcol .theme:last-child { margin-bottom: 0; }
+  .qcol .theme b { font-size: 13.5px; display: block; margin-bottom: 4px; }
+  blockquote {
+    margin: 6px 0; padding: 2px 0 2px 12px; border-left: 3px solid var(--hairline);
+    font-size: 13px; color: var(--ink-2); line-height: 1.7;
+  }
+  blockquote .att { display: block; font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+
+  /* ---------- SWOT ---------- */
+  .swot { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+  @media (max-width: 720px) { .swot { grid-template-columns: 1fr; } }
+  .swot .cell { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+  .swot .cell h4 { margin: 0 0 8px; font-size: 14px; }
+  .swot .cell h4 small { color: var(--muted); font-weight: 600; letter-spacing: 0.08em; }
+  .swot ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--ink-2); line-height: 1.8; }
+  .swot li { margin-bottom: 6px; }
+
+  /* ---------- taxonomy ---------- */
+  .taxo { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 18px 0; }
+  .taxo .node { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .taxo .node.this { border-color: var(--accent-text); border-width: 1.5px; }
+  .taxo .node h4 { margin: 0 0 2px; font-size: 14px; }
+  .taxo .node .en { font-size: 11.5px; color: var(--muted); letter-spacing: 0.04em; margin: 0 0 8px; }
+  .taxo .node p { margin: 0; font-size: 12.5px; color: var(--ink-2); line-height: 1.7; }
+  .taxo .node .pr { font-size: 12.5px; margin-top: 8px; color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  /* ---------- spec card ---------- */
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--surface); margin: 16px 0; }
+  .spec { padding: 13px 16px; border-bottom: 1px solid var(--hairline); border-right: 1px solid var(--hairline); }
+  .spec .k { font-size: 11.5px; color: var(--muted); margin-bottom: 2px; }
+  .spec .v { font-size: 13.5px; font-weight: 600; }
+
+  /* ---------- SVG chart ---------- */
+  .svgwrap { width: 100%; overflow-x: auto; }
+  .svgwrap svg { display: block; width: 100%; height: auto; min-width: 560px; }
+  .axis-lab { font-size: 11px; fill: var(--muted); }
+  .grid-ln { stroke: var(--hairline); stroke-width: 1; }
+  .base-ln { stroke: var(--baseline); stroke-width: 1; }
+  .pt-lab { font-size: 11.5px; fill: var(--ink-2); font-weight: 600; }
+
+  /* ---------- tooltip ---------- */
+  #tip {
+    position: fixed; z-index: 90; pointer-events: none; display: none;
+    background: var(--surface); color: var(--ink); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 12.5px; line-height: 1.6;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.14); max-width: 300px;
+  }
+  #tip .t1 { font-weight: 700; }
+  #tip .t2 { font-variant-numeric: tabular-nums; }
+  #tip .t3 { color: var(--ink-2); font-size: 11.5px; }
+  [data-t1] { cursor: default; }
+
+  /* provenance chip */
+  .prov {
+    display: inline-block; font-size: 10.5px; letter-spacing: 0.06em; color: var(--muted);
+    border: 1px solid var(--hairline); border-radius: 4px; padding: 0 6px; vertical-align: 1px;
+  }
+
+  .src-list { font-size: 13px; line-height: 2.0; color: var(--ink-2); padding-left: 20px; }
+  .src-list li { margin-bottom: 2px; overflow-wrap: anywhere; }
+  .foot { border-top: 1px solid var(--hairline); margin-top: 56px; padding-top: 18px; font-size: 12.5px; color: var(--muted); line-height: 1.9; }
+
+  .btrack, .bval { min-width: 0; }
+  @media (max-width: 620px) {
+    .brow, .refrow { grid-template-columns: 1fr auto; }
+    .blab { grid-column: 1 / -1; text-align: left; }
+    .bval { font-size: 12px; }
+    .cover { padding-top: 40px; }
+  }
+</style>
+
+<div class="doc">
+
+  <!-- ======================= COVER ======================= -->
+  <header class="cover">
+    <p class="eyebrow">市场调研报告 · North America Market Research</p>
+    <h1>北美一体式洗衣中心品类透视：以 GE GUD27ESSMWW（Unitized Spacemaker 3.8 + 5.9 电烘）为锚点</h1>
+    <p class="sub">品类全景 × 单品深挖：需求基本盘、竞争与相邻形态挤压、14 个零售渠道实测、定价与关税、消费者证言、数据缺口与采购路径。</p>
+    <div class="meta">
+      <span><b>数据抓取日</b> 2026-08-07（单日快照）</span>
+      <span><b>渠道覆盖</b> 14 个（厂商直营 / 大连锁 / 会员店 / 专业电商 / 区域独立）</span>
+      <span><b>数据纪律</b> 仅收录可点击验证的硬数据；缺口如实标注并给出采购路径</span>
+      <span><b>语言</b> 中文正文 · 英文原文引用</span>
+    </div>
+  </header>
+
+  <!-- ======================= TOC ======================= -->
+  <nav class="toc" aria-label="目录">
+    <div class="toc-inner">
+      <a href="#s1">01 执行摘要</a>
+      <a href="#s2">02 方法与数据可信度</a>
+      <a href="#s3">03 品类定义与产品</a>
+      <a href="#s4">04 需求侧</a>
+      <a href="#s5">05 竞争格局</a>
+      <a href="#s6">06 渠道与经销商</a>
+      <a href="#s7">07 定价分析</a>
+      <a href="#s8">08 消费者洞察</a>
+      <a href="#s9">09 宏观与监管</a>
+      <a href="#s10">10 SWOT 与建议</a>
+      <a href="#s11">11 数据缺口与采购</a>
+      <a href="#s12">12 来源附录</a>
+    </div>
+  </nav>
+
+  <!-- ======================= KPI ======================= -->
+  <div class="kpis" aria-label="关键指标">
+    <div class="tile">
+      <p class="k">主流街价（电动版）</p>
+      <p class="v">$1,549</p>
+      <p class="d">Home Depot / Lowe's / Abt 一致</p>
+    </div>
+    <div class="tile">
+      <p class="k">全网观测最低价</p>
+      <p class="v">$1,349.99</p>
+      <p class="d">Walmart（疑似第三方卖家）</p>
+    </div>
+    <div class="tile">
+      <p class="k">厂商标价 MSRP</p>
+      <p class="v">$1,749</p>
+      <p class="d">4 个独立来源交叉验证</p>
+    </div>
+    <div class="tile">
+      <p class="k">燃气版溢价</p>
+      <p class="v">+$100</p>
+      <p class="d">GUD27GSSMWW，Best Buy 例外为 $0</p>
+    </div>
+    <div class="tile">
+      <p class="k">渠道评分带</p>
+      <p class="v">4.0–4.4<span style="font-size:14px;color:var(--muted)"> / 5</span></p>
+      <p class="d">6 个平台，池规模差异大</p>
+    </div>
+    <div class="tile">
+      <p class="k">最大单渠道评论池</p>
+      <p class="v">13,209</p>
+      <p class="d">Home Depot（疑似联合池）</p>
+    </div>
+  </div>
+
+  <!-- ======================= 01 执行摘要 ======================= -->
+  <section class="chap" id="s1">
+    <div class="chap-head">
+      <span class="no">Section 01 · Executive Summary</span>
+      <h2>执行摘要：一个"幸存者利基"里的基准机型</h2>
+      <p class="lede">八条核心发现，全部可回溯到正文图表与来源链接。</p>
+    </div>
+
+    <div class="findings">
+      <div class="finding"><span class="n" aria-hidden="true"></span><div>
+        <h4>传统一体式洗衣中心只剩 3 个品牌在做，GE 是其中的规格上限</h4>
+        <p>逐一核查品牌官网后，全美目前仍在售的传统一体机（unitized laundry center）仅剩 GE、Whirlpool、Frigidaire 三家（外加 GE 给经销商渠道的 Crosley 贴牌 XUD27）。Samsung、LG、Maytag、Amana、Hotpoint 官网均无此形态。GUD27ESSMWW 以 3.8 cu.ft. 洗涤容量居传统阵营第二（Frigidaire 3.9 略高）、烘干 5.9 cu.ft. 并列最大。（详见第 05 章）</p>
+      </div></div>
+      <div class="finding"><span class="n" aria-hidden="true"></span><div>
+        <h4>价格结构清晰：标价 $1,749，主流街价 $1,549，底价 $1,349.99</h4>
+        <p>电动版在 11 个有公开报价的渠道里，价格收敛于 $1,542–$1,574 窄带（HD/Lowe's/Abt 三家整齐地挂 $1,549），Best Buy $1,484.99 是最低的大连锁价，Walmart 上疑似第三方卖家挂出 $1,349.99 全网底价。燃气孪生版恒定 +$100（Best Buy 例外，两版同价）。（图表 5–7）</p>
+      </div></div>
+      <div class="finding"><span class="n" aria-hidden="true"></span><div>
+        <h4>渠道高度集中于两大建材连锁，与品类份额数据吻合</h4>
+        <p>OpenBrand（原 TraQline）公开数据：2025 年美国洗衣品类单位份额 Lowe's 40% + Home Depot 32%，合计 72%。本 SKU 的评论池分布（HD 1.3 万条、Lowe's 1.2 万条 vs Best Buy 1,385 条）与之互相印证。Costco 以"含配送安装+旧机回收+2 年保修"打包差异化但价格对会员不公开；P.C. Richard 执行 MAP 购物车内显价。（第 06 章）</p>
+      </div></div>
+      <div class="finding"><span class="n" aria-hidden="true"></span><div>
+        <h4>形态正被"塔式一体机"挤压，零售类目已经合流</h4>
+        <p>Home Depot 已把 LG WashTower 挂名为 "LG WashTower Stacked SMART <em>Laundry Center</em>"，Lowe's 把 Samsung Bespoke AI Laundry Hub 挂为 "…Stacked <em>Laundry Center</em>"——单 SKU 塔式机以 $1,897–$2,199 街价（贵 $350–650）从上方压制传统一体机；评测媒体 Reviewed 的 2026 年"最佳 Laundry Center"榜把三星/LG 排在前列，传统机沦为预算选项。Lowe's 品类页自述典型价 $1,878、区间 $1,298–$3,099。（图表 8–9）</p>
+      </div></div>
+      <div class="finding"><span class="n" aria-hidden="true"></span><div>
+        <h4>需求基本盘在租赁多户住宅，且 92% 的高层烘干机是电的</h4>
+        <p>2024 年美国多户住宅完工 60.8 万套创 38 年新高、其中 95% 为租赁用途；2025 年回落至 48.4 万套——交付管线收缩是品类中期逆风。RECS 数据显示 5 层以上多户住宅中 92% 烘干机为电动，天然利好电动版（GUD27ESSMWW 正是电动版）。洗衣机约 10 年、烘干机约 13 年的更换周期（NAHB）支撑存量替换需求。（第 04 章）</p>
+      </div></div>
+      <div class="finding"><span class="n" aria-hidden="true"></span><div>
+        <h4>口碑稳定在 4.2 星附近，差评四大主题高度一致</h4>
+        <p>六个平台评分 4.0–4.4。好评集中在"塞得进衣柜/浴室"的空间适配与旋钮操作简单；差评集中在甩干振动噪音、无结束提示音、早期故障个案、以及"排风管+电源盒实际吃掉约 4 英寸深度"的安装落差。Costco 独立池评分（4.0）低于大连锁疑似联合池（4.2–4.4），是更保守的口碑下界。（第 08 章）</p>
+      </div></div>
+      <div class="finding"><span class="n" aria-hidden="true"></span><div>
+        <h4>成本端：钢关税已落地，GE 用 4.9 亿美元回流对冲</h4>
+        <p>2025-06-23 起洗衣机/烘干机被纳入 Section 232 钢衍生品 50% 关税（按申报钢含量计税，HTSUS 8450/8451 税号）；大家电 PPI 于 2025 年 12 月创历史新高。GE Appliances 2025 年 6 月宣布 4.9 亿美元把洗衣机产线从中国回流路易斯维尔（2027 投产），8 月追加 5 年 30 亿美元投资计划。注意：NBER 研究显示 2012/2016 两轮洗衣机反倾销税后 12 个月，洗衣设备 CPI 反而各降约 5%——关税→涨价的传导并不必然。（第 09 章）</p>
+      </div></div>
+      <div class="finding"><span class="n" aria-hidden="true"></span><div>
+        <h4>数据缺口明确、可购：品类级份额只有两家能卖你
+        </h4>
+        <p>Laundry center 品类级的品牌份额/出货明细不存在于公开域。可购路径里，真正覆盖美国洗衣品类份额的只有两家：OpenBrand Durable IQ（季度消费者面板，需询价）与 Circana（零售 POS，需询价）；行业出货托底是 AHAM FSR（会员/非会员差价）。最低成本起步是 Statista $199/月。完整采购矩阵与三档预算组合见第 11 章。</p>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ======================= 02 方法 ======================= -->
+  <section class="chap" id="s2">
+    <div class="chap-head">
+      <span class="no">Section 02 · Methodology &amp; Data Integrity</span>
+      <h2>研究方法与数据可信度声明</h2>
+      <p class="lede">这一章先于所有结论：每个数字怎么来的、有多可信、哪里有冲突。</p>
+    </div>
+
+    <div class="prose">
+      <p><b>采集方式。</b>全部数据于 2026-08-07 单日由四条并行工作流联网采集：① 渠道价格与评论扫描（14 渠道）；② 品类 SKU 普查（3 家在售品牌 + 10 个缺席品牌逐一核查）；③ 行业与宏观硬数据（AHAM / Census / NAHB / DOE / Federal Register / 公司财报）；④ 付费数据商目录与评论主题挖掘。每条数据均记录来源 URL、抓取方式与抓取日期，正文与附录可点击回溯。</p>
+      <p><b>硬数据纪律。</b>本报告只收录采集时直接观测到的数字：不引用记忆值、不做外推、不填补缺口。品类市场规模等只存在于付费研究估算中的数字（如 Grand View "北美洗衣机烘干机市场 2024 年 $16.75B"）被明确排除在硬数据集之外，仅在第 11 章作为"可购买的估算"列示。凡缺口，正文以 <span class="prov">数据不可得</span> 标注并汇总到第 11 章。</p>
+    </div>
+
+    <div class="callout">
+      <b>⚠ 必须诚实披露的采集限制：</b>本次研究环境的出口代理拦截了对零售与政府域名的<b>直接页面抓取</b>（Home Depot、Lowe's、GE、Census、SEC 等均被拦截）。因此本报告 100% 的数字来自<b>搜索引擎结果快照（search snippet）</b>而非实时页面。后果与对策：① 个别快照存在时滞（一条 Home Depot 快照显示的配送日期落后约两周），价格可能已变动；② 同一 SKU 在不同快照中出现价格/评论数不一致时，我们<b>把冲突原样记录</b>（见下表）而不是择优；③ 所有 URL 均给出，读者可在无拦截的网络环境下逐条复核。这是单日快照研究的诚实边界。
+    </div>
+
+    <h3>已知数据冲突登记（全部保留，不择优）</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>数据项</th><th>快照 A</th><th>快照 B</th><th>处理方式</th></tr></thead>
+      <tbody>
+        <tr><td>Home Depot 电动版价格</td><td class="num">$1,549（省 $200）</td><td class="num">$1,398（原 $1,649）</td><td>不同缓存期的快照；正文用 $1,549（与 $1,749 现行标价体系一致），图表脚注列出 $1,398</td></tr>
+        <tr><td>Home Depot 评论数</td><td class="num">13,209</td><td class="num">2,114</td><td>疑似"产品页联合池"与"单型号池"之差；两值均列，联合池特征见第 08 章</td></tr>
+        <tr><td>Frigidaire 烘干容量</td><td>5.5 cu.ft.（官网/BB/HD）</td><td>5.6 cu.ft.（AJM/Walmart 标题）</td><td>以官网 5.5 为准，标注冲突</td></tr>
+        <tr><td>燃气版 HD 价格</td><td class="num">$1,649（原 $1,849）</td><td class="num">$1,498 / $1,398（旧快照）</td><td>用与现行 $1,849 标价一致的 $1,649，标注谨慎使用</td></tr>
+        <tr><td>DOE 新规对顶开机的适用范围</td><td>"与 ENERGY STAR 等同"（适用）</td><td>"不适用于标准尺寸顶开机"</td><td>互相矛盾且原文被拦截 → 列为数据缺口 #4，不下结论</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>来源结构</h3>
+    <div class="prose">
+      <p>零售渠道 14 家（含被拦截/隐价的 3 家，如实记录）；一级来源（联邦公报、Census/NAHB、公司新闻室、SEC 文件页）与行业媒体（KBDN 引 AHAM）、专有面板公开博客（OpenBrand）分层引用；评论原文引语标注平台与呈现方式（直接引语 / 摘要转述）。完整来源清单见第 12 章附录。</p>
+    </div>
+  </section>
+
+<!-- ======================= 03 品类定义 ======================= -->
+  <section class="chap" id="s3">
+    <div class="chap-head">
+      <span class="no">Section 03 · Category Definition</span>
+      <h2>品类定义与产品形态：什么是 Laundry Center，边界正在哪里松动</h2>
+      <p class="lede">"一体式洗衣中心"= 出厂即为一个不可拆分整机的上烘下洗柜体。它与四个相邻形态构成完整的垂直洗衣格局。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 1 · Exhibit 1</p>
+      <p class="ex-title">北美垂直洗衣形态图谱与观测价格带</p>
+      <p class="ex-sub">价格为 2026-08-07 观测到的街价区间（美元）；蓝框为本报告锚点形态</p>
+      <div class="taxo">
+        <div class="node this">
+          <h4>一体式洗衣中心 ◀ 本报告</h4>
+          <p class="en">UNITIZED LAUNDRY CENTER</p>
+          <p>单一整机，下洗（顶开波轮）上烘，共用机壳与电源，一次购买一次安装。27" 全尺寸与 24" 紧凑两档。仅剩 GE / Whirlpool / Frigidaire 在产。</p>
+          <p class="pr">$1,299–$1,650 街价</p>
+        </div>
+        <div class="node">
+          <h4>可堆叠组合</h4>
+          <p class="en">STACKABLE PAIR</p>
+          <p>两台独立前开机加装堆叠件。容量最大、选择最多，但两次购买决策 + 堆叠件安装。各品牌均有。</p>
+          <p class="pr">价格跨度大（两台合计）</p>
+        </div>
+        <div class="node">
+          <h4>塔式单体机</h4>
+          <p class="en">SINGLE-SKU TOWER</p>
+          <p>LG WashTower / Samsung Bespoke AI Laundry Hub：前开洗+烘一体塔，中置控制面板，单 SKU 购买。零售类目已把它们挂进 "Laundry Center"。</p>
+          <p class="pr">$1,897–$2,199 街价（MSRP $2,199–$2,799）</p>
+        </div>
+        <div class="node">
+          <h4>单桶洗烘一体</h4>
+          <p class="en">ALL-IN-ONE COMBO</p>
+          <p>一个滚筒完成洗+烘（GE Profile UltraFast 热泵免排风），半高单箱，免去转移衣物。</p>
+          <p class="pr">$2,099.99 街价（Best Buy）</p>
+        </div>
+        <div class="node">
+          <h4>紧凑 / 便携</h4>
+          <p class="en">COMPACT / PORTABLE</p>
+          <p>24" 及以下、110V 或免排风的小容量方案（Equator、Summit、Magic Chef 等，多为组合或单桶而非真一体机）。</p>
+          <p class="pr">价格分散</p>
+        </div>
+      </div>
+      <p class="ex-src">来源：各品牌官网与零售列表逐一核查（完整 URL 见第 05 章图表 4 与第 12 章附录）· 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <h3>锚点单品：GE GUD27ESSMWW 规格卡</h3>
+    <div class="spec-grid">
+      <div class="spec"><div class="k">形态</div><div class="v">27" Unitized Spacemaker® 一体式洗衣中心</div></div>
+      <div class="spec"><div class="k">整机尺寸（高×宽×深）</div><div class="v">75-7/8" × 26-3/4" × 30-7/8"</div></div>
+      <div class="spec"><div class="k">洗衣机</div><div class="v">3.8 cu.ft. · 顶开搅拌柱 · 不锈钢内桶</div></div>
+      <div class="spec"><div class="k">洗涤程序 / 转速</div><div class="v">11 程序 · 6 档水温 · 自动感知水位 · 800 RPM</div></div>
+      <div class="spec"><div class="k">烘干机</div><div class="v">5.9 cu.ft. · 电烘（240V）· 4 程序 · Auto Dry 温感</div></div>
+      <div class="spec"><div class="k">控制方式</div><div class="v">旋钮机电式（无联网/无 App）</div></div>
+      <div class="spec"><div class="k">颜色</div><div class="v">白色（White on White）</div></div>
+      <div class="spec"><div class="k">燃气孪生版</div><div class="v">GUD27GSSMWW（+$100 街价溢价）</div></div>
+      <div class="spec"><div class="k">贴牌孪生</div><div class="v">Crosley XUD27ESSMWW（独立经销商渠道，$1,649）</div></div>
+      <div class="spec"><div class="k">原产地</div><div class="v">公开不可核实 <span class="prov">数据不可得</span></div></div>
+    </div>
+    <p class="ex-src" style="border:none;padding-top:0;margin-top:6px">来源：<a href="https://www.geappliances.com/appliance/GE-Unitized-Spacemaker-3-8-cu-ft-Capacity-Washer-with-Stainless-Steel-Basket-and-5-9-cu-ft-Capacity-Electric-Dryer-GUD27ESSMWW" rel="noopener">GE Appliances 产品页</a> · <a href="https://www.ajmadison.com/cgi-bin/ajmadison/GUD27ESSMWW.html" rel="noopener">AJ Madison 规格页</a> · 抓取 2026-08-07</p>
+
+    <div class="prose">
+      <h3>边界为什么在松动</h3>
+      <p>本报告把"产品形态"定义为传统一体机，但必须指出：<b>零售端的类目边界已经合流</b>。Home Depot 给 LG 塔式机的商品标题是 "LG WashTower <em>Stacked SMART Laundry Center</em>"，Lowe's 给三星塔式机的标题是 "Samsung Bespoke AI Laundry Hub Electric <em>Stacked Laundry Center</em>"。这意味着：在消费者的搜索与比价路径里，$1,549 的 GUD27ESSMWW 和 $1,897 起的 LG WashTower 出现在同一个货架上。品类竞争分析（第 05 章）因此必须把塔式机作为"形态内竞品"而非"品类外替代"处理。</p>
+    </div>
+  </section>
+
+  <!-- ======================= 04 需求侧 ======================= -->
+  <section class="chap" id="s4">
+    <div class="chap-head">
+      <span class="no">Section 04 · Demand Side</span>
+      <h2>需求侧：谁在买一体式洗衣中心</h2>
+      <p class="lede">这个形态的存在理由是"27 英寸宽的洗衣柜位"：租赁公寓、公寓改造、小户型与移动房屋的原位替换。需求由三股力量驱动——多户住宅存量与交付、设备更换周期、以及户内洗衣渗透。</p>
+    </div>
+
+    <div class="prose">
+      <p><b>住房基本盘。</b>2023 年 American Housing Survey 记录美国 1.332 亿户占用住房单元。一份引用 2019 AHS 的二手来源称约 1,960 万户（约 16%）家中无洗衣机/烘干机——该数字未能对照 Census 原表核实，仅作方向性参考并已列入数据缺口。更换周期方面，NAHB《住宅部件寿命研究》给出洗衣机约 10 年、烘干机约 13 年——一体机因洗烘同壳，任一侧到寿即触发整机替换，这是该品类天然的存量替换飞轮。</p>
+      <p><b>电力化结构利好电动版。</b>RECS（住宅能耗调查）数据显示：5 层及以上多户住宅中 <b>92% 的烘干机为电动</b>（转引自加州公用事业 CalNEXT 2026 年 2 月报告）。这解释了为什么 GUD27ESSMWW（电动版）的评论池比燃气孪生版大一个数量级（13,209 vs 303，Home Depot）。同一报告自身估算约 68% 的多户住宅市场仍由公共洗衣房服务、美国西部新建多户 67% 为共享洗衣——户内化空间仍大，但该两项为报告内部估算，非普查数。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 2 · Exhibit 2</p>
+      <p class="ex-title">美国多户住宅（5+ 单元）完工量：38 年新高后的回落</p>
+      <p class="ex-sub">千套 · Survey of Construction 口径（NAHB 分析）；2026 年为 6 月单月折年率（SAAR），口径不同仅作参考</p>
+      <div class="bars" role="img" aria-label="多户完工：2024 年 608 千套，2025 年 484 千套，2026 年 6 月折年率 413 千套">
+        <div class="brow">
+          <span class="blab">2024 完工<small>1986 年以来最高；95% 为租赁</small></span>
+          <span class="btrack baseline-rule" data-t1="2024 年多户完工" data-t2="608,000 套（38 年新高）" data-t3="其中 54% 高密度；建于租赁用途 95%" tabindex="0"><span class="bfill" style="width:93.5%"></span></span>
+          <span class="bval">608K</span>
+        </div>
+        <div class="brow">
+          <span class="blab">2025 完工</span>
+          <span class="btrack baseline-rule" data-t1="2025 年多户完工" data-t2="484,000 套" data-t3="较 2024 年回落 20%（NAHB 对 SOC 的分析）" tabindex="0"><span class="bfill" style="width:74.5%"></span></span>
+          <span class="bval">484K</span>
+        </div>
+        <div class="brow">
+          <span class="blab">2026-06 SAAR<small>月度折年率，非年度完工</small></span>
+          <span class="btrack baseline-rule" data-t1="2026 年 6 月完工折年率" data-t2="413,000 套 / 年（SAAR）" data-t3="Census 新建住宅月报" tabindex="0"><span class="bfill" style="width:63.5%;opacity:.55"></span></span>
+          <span class="bval">413K<small>/yr</small></span>
+        </div>
+      </div>
+      <p class="ex-note">配套事实：2024 年多户<b>开工</b> 355K（−25% vs 2023）；2025 年多户开工回升 +17.4%；2024 年在建公寓约 100 万套为 1973 年以来最高。NRC 口径下 2024 年完工为 589K（与 SOC 608K 存在统计口径差，两值均记录）。NAHB 预测 2026/2027 年多户开工 392K/367K——预测值，非实测。</p>
+      <details class="dtable"><summary>查看数据表</summary>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>指标</th><th class="num">数值</th><th>口径</th><th>来源</th></tr></thead>
+          <tbody>
+            <tr><td>2024 多户完工</td><td class="num">608,000</td><td>SOC（NAHB 分析）</td><td><a href="https://eyeonhousing.org/2025/07/2024-multifamily-construction-units-completed-reaches-38-year-high/" rel="noopener">NAHB Eye on Housing</a></td></tr>
+            <tr><td>2024 多户完工（另一口径）</td><td class="num">589,000</td><td>NRC</td><td><a href="https://www.mba.org/news-and-research/newsroom/blog-post/chart-of-the-week--potential-trajectories-of-multifamily-completions" rel="noopener">MBA</a></td></tr>
+            <tr><td>2025 多户完工</td><td class="num">484,000</td><td>SOC（NAHB 分析）</td><td><a href="https://www.nahb.org/blog/2026/07/multifamily-high-density-completion-trends-2025" rel="noopener">NAHB Blog</a></td></tr>
+            <tr><td>2026-06 完工 SAAR</td><td class="num">413,000/yr</td><td>Census NRC 月报</td><td><a href="https://www.census.gov/construction/nrc/pdf/newresconst.pdf" rel="noopener">Census NRC</a></td></tr>
+            <tr><td>2024 多户开工</td><td class="num">355,000（−25%）</td><td>Census（NAHB 发布）</td><td><a href="https://www.nahb.org/news-and-economics/press-releases/2025/01/housing-starts-end-2024-on-an-up-note" rel="noopener">NAHB</a></td></tr>
+            <tr><td>2025 多户开工</td><td class="num">+17.4% YoY</td><td>Census（NAHB 发布）</td><td><a href="https://www.nahb.org/news-and-economics/press-releases/2026/02/overall-housing-starts-inch-lower-in-2025" rel="noopener">NAHB</a></td></tr>
+          </tbody>
+        </table></div>
+      </details>
+      <p class="ex-src">来源：NAHB / Eye on Housing / MBA 对 Census 数据的分析与 Census NRC 月报（链接见数据表）· 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 3 · Exhibit 3</p>
+      <p class="ex-title">洗衣设备大盘：出货温和增长，形态结构仍由顶开与电烘主导</p>
+      <p class="ex-sub">左：AHAM 出货（经 KBDN 行业媒体引用）；右：OpenBrand 2025 年美国主要零售商洗衣销售结构（单位量口径）</p>
+      <div class="kpis" style="margin-top:0">
+        <div class="tile"><p class="k">大家电出货 2025 Q1</p><p class="v">20.2M</p><p class="d">+2.6% vs Q1'24 的 19.7M</p></div>
+        <div class="tile"><p class="k">洗衣设备出货 2025 Q1</p><p class="v">+3.3%</p><p class="d">YoY（AHAM via KBDN）</p></div>
+        <div class="tile"><p class="k">洗衣设备出货 2025 H1</p><p class="v">+2.9%</p><p class="d">YoY（AHAM via KBDN）</p></div>
+        <div class="tile"><p class="k">全篮子出货 2025 H1</p><p class="v">58.3M</p><p class="d">+0.8%；含更宽品类篮，口径警示</p></div>
+      </div>
+      <div class="stack-block" style="margin-top:20px">
+        <p class="stack-cap">洗衣机形态结构（2025，单位量）</p>
+        <div class="stack" role="img" aria-label="顶开式 66%，前开式 28%，其余 6%">
+          <span class="seg" style="background:var(--s1);flex:66" data-t1="顶开式洗衣机" data-t2="66% 单位份额" data-t3="OpenBrand：主要零售商 2025 年售出洗衣机" tabindex="0">顶开 66%</span>
+          <span class="seg" style="background:var(--s2);flex:28" data-t1="前开式洗衣机" data-t2="28% 单位份额" tabindex="0">前开 28%</span>
+          <span class="seg resid" style="background:var(--resid);flex:6" data-t1="其余形态" data-t2="6%（余量）" data-t3="按 100% 减计得出的余量" tabindex="0"></span>
+        </div>
+        <p class="stack-src">GUD27ESSMWW 的顶开搅拌柱形态仍是美国销量主流——"顶开偏好"是传统一体机存续的需求基础。灰色为余量 6%。</p>
+      </div>
+      <div class="stack-block">
+        <p class="stack-cap">烘干机能源结构（2025，单位量）</p>
+        <div class="stack" role="img" aria-label="电烘 80%，其余 20%">
+          <span class="seg" style="background:var(--s1);flex:80" data-t1="电烘干机" data-t2="80% 单位份额" data-t3="OpenBrand Laundry Market: 2025 Year in Review" tabindex="0">电烘 80%</span>
+          <span class="seg resid" style="background:var(--resid);flex:20" data-t1="其余（燃气等）" data-t2="20%（余量）" tabindex="0">余量 20%</span>
+        </div>
+        <p class="stack-src">与 RECS"5+ 层多户 92% 电烘"共同指向：电动版是一体机的主战场，燃气版是补充。</p>
+      </div>
+      <p class="ex-src">来源：<a href="https://www.kitchenbathdesign.com/mid-year-market-uncertainty-lingers/" rel="noopener">KBDN 引 AHAM（Q1）</a> · <a href="https://www.kitchenbathdesign.com/a-bullish-though-tempered-outlook/" rel="noopener">KBDN 引 AHAM（H1）</a> · <a href="https://openbrand.com/newsroom/blog/laundry-market-year-in-review" rel="noopener">OpenBrand: Laundry Market 2025 Year in Review</a> · <a href="https://calnext.com/wp-content/uploads/2026/02/ET25SWE0009_Market-and-Technical-Evaluation-of-Combination-Washer-Dryer-Units-for-Multifamily-Buildings_Final-Report.pdf" rel="noopener">CalNEXT ET25SWE0009（引 RECS）</a> · 抓取 2026-08-07 · <span class="prov">search snippet</span> · AHAM 品类级单位量明细为付费数据（见第 11 章）</p>
+    </div>
+
+    <div class="prose">
+      <h3>需求画像小结</h3>
+      <p>把上述硬数据拼起来，laundry center 的买家画像相当清晰：<b>① 存量替换者</b>——27" 洗衣柜位里到寿的旧一体机业主/房东，直接尺寸对位替换（这也是评论里"fits perfectly"高频出现的原因）；<b>② 租赁多户运营方</b>——95% 租赁用途的多户交付高峰（2024 年 60.8 万套）在 2025 年已回落 20%，新装需求边际收缩，但 2021–2024 交付潮形成的巨大存量将在 2030 年代进入首轮替换；<b>③ 小户型/移动房屋自住者</b>——预算敏感，看重"一次购买、旋钮简单、无联网"。这三类需求都偏刚性、低周期弹性，与出货数据（洗衣 +2.9%~+3.3%）的温和韧性一致。</p>
+    </div>
+  </section>
+
+  <!-- ======================= 05 竞争格局 ======================= -->
+  <section class="chap" id="s5">
+    <div class="chap-head">
+      <span class="no">Section 05 · Competitive Landscape</span>
+      <h2>竞争格局：三家幸存者、一个贴牌、两座压顶的塔</h2>
+      <p class="lede">传统一体机是典型的"幸存者品类"：韩系与 Whirlpool 旗下多品牌均已退出或从未进入，需求却仍在。竞争烈度低（同段位仅 3 个品牌），但形态级威胁来自上方价格带的塔式机。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 4 · Exhibit 4</p>
+      <p class="ex-title">美国在售一体式洗衣中心全 SKU 矩阵（2026-08-07 普查）</p>
+      <p class="ex-sub">蓝底行为本报告锚点单品；街价为观测值（含区间时取代表值，冲突见第 02 章登记表）</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr>
+          <th>品牌 / 型号</th><th>段位</th><th class="num">宽度</th><th class="num">洗容 cu.ft.</th><th>洗涤形式</th><th class="num">烘容 cu.ft.</th><th>烘干能源</th><th class="num">观测街价</th><th class="num">标价/参考价</th><th>评分（评论数）</th>
+        </tr></thead>
+        <tbody>
+          <tr class="hl"><td><b>GE GUD27ESSMWW</b></td><td>27" 全尺寸</td><td class="num">26.75"</td><td class="num">3.8</td><td>顶开搅拌柱·不锈钢桶</td><td class="num">5.9</td><td>电</td><td class="num">$1,398–1,574<br><span class="sm">主流 $1,549</span></td><td class="num">$1,749</td><td>4.2（13,209 HD 联合池）</td></tr>
+          <tr><td>GE GUD27GSSMWW</td><td>27" 全尺寸</td><td class="num">26.75"</td><td class="num">3.8</td><td>顶开搅拌柱·不锈钢桶</td><td class="num">5.9</td><td>燃气</td><td class="num">$1,599–1,649</td><td class="num">$1,849</td><td>4.3（303 HD）</td></tr>
+          <tr><td>Crosley XUD27ESSMWW <span class="sm">GE 贴牌</span></td><td>27" 全尺寸</td><td class="num">—</td><td class="num">3.8</td><td>顶开搅拌柱·不锈钢桶</td><td class="num">5.9</td><td>电</td><td class="num">$1,649</td><td class="num">—</td><td>—（独立经销商渠道）</td></tr>
+          <tr><td>Whirlpool WET4027HW</td><td>27" 全尺寸</td><td class="num">27"</td><td class="num">3.5</td><td>顶开双效搅拌柱</td><td class="num">5.9</td><td>电</td><td class="num">$1,621.69</td><td class="num">$1,699</td><td>4.2（808 Walmart）</td></tr>
+          <tr><td>Whirlpool WGT4027HW</td><td>27" 全尺寸</td><td class="num">27.25"</td><td class="num">3.5</td><td>顶开双效搅拌柱·瓷桶</td><td class="num">5.9</td><td>燃气</td><td class="num">$1,549</td><td class="num">$1,799–1,888</td><td>4.7（179 HD）</td></tr>
+          <tr><td>Whirlpool WETLV27HW <span class="sm">长风道</span></td><td>27" 全尺寸</td><td class="num">27"</td><td class="num">3.5</td><td>顶开搅拌柱</td><td class="num">5.9</td><td>电（长风道 125ft）</td><td class="num">$1,484.97–1,724.80</td><td class="num">$1,749</td><td>4.1（未标平台）</td></tr>
+          <tr><td>Frigidaire FLCE7522AW</td><td>27" 全尺寸</td><td class="num">27"</td><td class="num">3.9</td><td>顶开（800 RPM）</td><td class="num">5.5*</td><td>电</td><td class="num">$1,234.99–1,599.97<br><span class="sm">代表 $1,299</span></td><td class="num">$1,799</td><td>4.3（2,611 Walmart）</td></tr>
+          <tr><td>Frigidaire FLCG7522AW</td><td>27" 全尺寸</td><td class="num">27"</td><td class="num">3.9</td><td>顶开（800 RPM）</td><td class="num">5.5*</td><td>燃气</td><td class="num">$1,399–1,549.95</td><td class="num">$1,799</td><td>—</td></tr>
+          <tr><td>Frigidaire FLCE7523AW <span class="sm">长风道</span></td><td>27" 全尺寸</td><td class="num">27"</td><td class="num">3.9</td><td>顶开</td><td class="num">5.5</td><td>电（长风道 127ft）</td><td class="num">$1,348–1,349.99</td><td class="num">$1,649.99</td><td>—（Lowe's 已下架该 SKU）</td></tr>
+          <tr><td>GE GUD24ESSMWW</td><td>24" 紧凑</td><td class="num">23.75"</td><td class="num">2.3</td><td>顶开（830 RPM）</td><td class="num">4.4</td><td>电</td><td class="num">$1,499–1,529.10</td><td class="num">$1,599–1,699</td><td>4.2（2,542 Walmart）</td></tr>
+          <tr><td>GE GUD24GSSMWW</td><td>24" 紧凑</td><td class="num">≈24"</td><td class="num">2.3</td><td>顶开</td><td class="num">4.4</td><td>燃气</td><td class="num">$1,599</td><td class="num">$1,699</td><td>—</td></tr>
+          <tr><td>Whirlpool WET4024HW</td><td>24" 紧凑</td><td class="num">23.875"</td><td class="num">1.6</td><td>顶开叶轮（无搅拌柱）</td><td class="num">3.4</td><td>电</td><td class="num">$1,248–1,399</td><td class="num">$1,699</td><td>4.3（2,224 HD）</td></tr>
+          <tr><td>ConServ CW2240+CD4040 <span class="sm">†</span></td><td>24" 紧凑</td><td class="num">—</td><td class="num">2.2</td><td>前开 1400 RPM</td><td class="num">4.0</td><td>电（冷凝免排风）</td><td class="num">$1,949</td><td class="num">—</td><td>—</td></tr>
+          <tr><td>Equator DW835+DD860 <span class="sm">†</span></td><td>24" 紧凑</td><td class="num">24"</td><td class="num">1.9</td><td>前开</td><td class="num">3.5</td><td>电（110V）</td><td class="num">未见公开价</td><td class="num">—</td><td>—</td></tr>
+        </tbody>
+      </table></div>
+      <p class="ex-note">* Frigidaire 烘容在不同零售商间同时出现 5.5 与 5.6 两个标注（冲突已登记）。† ConServ 与 Equator 以"Laundry Center"类目上架，但物理上是两件式堆叠组合，非一体机——按普查如实收录并标注。观测另见：Whirlpool 上代 WET4027EW 已停产由 HW 接替；GUD24ESSMWW 与 FLCE7523AW 在 Lowe's 均显示"不再销售"（渠道收缩信号）。</p>
+      <p class="ex-src">来源：GE / Whirlpool / Frigidaire / Crosley 官网产品页 + Home Depot / Lowe's / Best Buy / Walmart / Abt / AJ Madison / 独立经销商列表（每行 URL 已存档于仓库 <code>data/sku_matrix.json</code>，附录含主链接）· 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <div class="prose">
+      <h3>十个"缺席品牌"证明这是幸存者利基</h3>
+      <p>逐一核查：<b>Samsung</b>（只有前开塔式 Hub）、<b>LG</b>（只有 WashTower 系）、<b>Maytag</b>（官网只有可堆叠组合；Lowe's 残留的老一体机页面疑似不可购）、<b>Amana</b>、<b>Hotpoint</b>（仅组合）、<b>Conservator</b>（仅组合）、<b>Magic Chef</b>（老一体机只剩配件页）、<b>Black+Decker</b>（仅堆叠架）、<b>Summit</b>（仅单桶与组合）、<b>Equator</b>（类目挂名但物理为组合）——截至 2026-08-07 官网/零售检索均未见真一体机。低烈度竞争 + 稳定替换需求 = 幸存者的定价权来源；这正是三家都敢挂 $1,699–$1,849 标价、再以 10–14% 折扣常态化销售的结构原因。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 5 · Exhibit 5</p>
+      <p class="ex-title">大家电品牌单位份额：公开可得的仅有两个 OpenBrand 快照</p>
+      <p class="ex-sub">美国大家电整体（非 laundry center 单列）；两快照时点不同，不可直接拼接对比</p>
+      <p class="pair-name">快照 A · MarketSignal 免费仪表盘（未标注具体季度）</p>
+      <div class="bars">
+        <div class="brow">
+          <span class="blab">Whirlpool</span>
+          <span class="btrack baseline-rule" data-t1="Whirlpool" data-t2="22.2% 单位份额" data-t3="OpenBrand MarketSignal 免费仪表盘快照" tabindex="0"><span class="bfill" style="width:88.8%"></span></span>
+          <span class="bval">22.2%</span>
+        </div>
+        <div class="brow">
+          <span class="blab">GE（Haier）</span>
+          <span class="btrack baseline-rule" data-t1="GE Appliances" data-t2="21.4% 单位份额" data-t3="OpenBrand MarketSignal 免费仪表盘快照" tabindex="0"><span class="bfill" style="width:85.6%"></span></span>
+          <span class="bval">21.4%</span>
+        </div>
+      </div>
+      <p class="pair-name" style="margin-top:16px">快照 B · OpenBrand 博客（2025 Q4）</p>
+      <div class="bars">
+        <div class="brow">
+          <span class="blab">GE（Haier）<small>该文仅披露 GE 数值</small></span>
+          <span class="btrack baseline-rule" data-t1="GE Appliances · 2025 Q4" data-t2="20.1% 单位份额（第一，环比持平）" data-t3="'GE、LG、Whirlpool、Samsung 为主导'（未给出其余数值）" tabindex="0"><span class="bfill" style="width:80.4%"></span></span>
+          <span class="bval">20.1%</span>
+        </div>
+      </div>
+      <p class="ex-note">补充公开表述（均为各方自述或媒体引用，非同一口径）：Korea Times（2024-04）称 2023 年美国家电市场 Samsung 21%、LG 19%；Whirlpool 10-K 自述 MDA 北美为 "the #1 company in North America"；GE 自述 "America's #1 Appliance Company"。品类级（laundry center 单列）份额公开域不存在 → 采购路径见第 11 章。</p>
+      <p class="ex-src">来源：<a href="https://openbrand.com/snapshots/major-appliances-market" rel="noopener">OpenBrand MarketSignal</a> · <a href="https://openbrand.com/newsroom/blog/us-major-appliance-industry-market-share-trends-rankings-infographic" rel="noopener">OpenBrand 博客（2025 Q4）</a> · <a href="https://www.koreatimes.co.kr/business/tech-science/20240410/samsung-lg-account-for-40-of-us-home-appliance-market" rel="noopener">Korea Times</a> · 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <div class="prose">
+      <h3>公司层面的硬事实</h3>
+    </div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>公司</th><th>可验证的公开事实（2026-08-07 快照）</th><th>对品类的含义</th></tr></thead>
+      <tbody>
+        <tr><td><b>GE Appliances（海尔）</b></td><td>自述"入驻半数美国家庭、America's #1 Appliance Company"；J.D. Power 2025 家电可靠性研究：GE 获最可靠品牌第一，且"洗衣品类中烘干机、前开与顶开洗衣机均排名第一"（2026-01-30 发布）；母公司海尔智家 FY2024 营收 RMB 2,859.81 亿（+4.29%），FY2025 全球营收首破 3,000 亿</td><td>品牌背书与可靠性叙事强；一体机是其 27" 柜位存量替换的守成产品</td></tr>
+        <tr><td><b>Whirlpool</b></td><td>FY2024 10-K：MDA 北美净销售 $102.36 亿，占总销售 62%；洗衣品类占总销售 27%；自述"最后一家仍在美国本土制造厨电与洗衣设备的大型企业"</td><td>北美洗衣是其现金牛；一体机线（WET/WGT4027）定位与 GE 直接对标</td></tr>
+        <tr><td><b>Electrolux（Frigidaire）</b></td><td>公开稿："2024 年集团在美国前开洗衣机市场跑赢大盘"；北美 2024 年经营亏损收窄</td><td>Frigidaire 以 3.9 cu.ft. 洗容 + 最低street价（$1,234.99 起）打价格侧</td></tr>
+        <tr><td><b>LG / Samsung</b></td><td>LG 2018 年曾引 TraQline 称前开洗衣机全美第一（此后无更新洗衣声明浮出）；Samsung Hub 为 2024 代新品，Walmart 上 4.7 星但仅 46 条评论</td><td>不做传统一体机，用塔式从上方压制；评论池尚小但评分更高</td></tr>
+      </tbody>
+    </table></div>
+    <p class="ex-src" style="border:none;padding-top:4px">来源：<a href="https://geappliancesco.com/company-overview/" rel="noopener">GE Appliances 公司页</a> · <a href="https://pressroom.geappliances.com/news/ge-appliances-recognized-as-the" rel="noopener">GE 新闻室（J.D. Power）</a> · <a href="https://www.sec.gov/Archives/edgar/data/106640/000010664025000011/whr-20241231.htm" rel="noopener">Whirlpool 10-K（SEC）</a> · <a href="https://smart-home.haier.com/media/l5tdgfto/haier-smart-home-fy-2024-annual-report.pdf" rel="noopener">海尔智家年报</a> · <a href="https://www.haier.com/global/press-events/news/20260402_288863.shtml" rel="noopener">海尔 FY2025</a> · <a href="https://www.electroluxgroup.com/en/electrolux-strengthens-offering-in-north-america-with-new-high-performance-energy-efficient-laundry-pair-34465/" rel="noopener">Electrolux</a> · 抓取 2026-08-07 · <span class="prov">search snippet</span>（10-K 为快照级转述，逐字原文见数据缺口 #11）</p>
+
+    <div class="prose">
+      <h3>形态级威胁：塔式机的三重压制</h3>
+      <p>① <b>货架同框</b>：零售类目合流后，塔式机与传统一体机同页比价；② <b>规格碾压</b>：LG WKEX200 洗容 4.5 cu.ft.（vs 3.8）、烘容 7.4（vs 5.9）、前开高效+智能联网，街价差已缩到 $350 左右（$1,897 vs $1,549）；③ <b>口碑势能</b>：LG 塔 4.6 星/2,784 条（Best Buy）高于传统机的 4.1–4.3 星带。传统一体机护城河收窄为三件事：<b>顶开偏好</b>（66% 单位份额的形态基本盘）、<b>价格下限</b>（$1,299–1,549 vs 塔式 $1,897+）、<b>27" 柜位原位替换 + 旋钮极简</b>。GUD27ESSMWW 的产品定义恰好压在这三点上——这是它在 GE 组合里的战略角色。</p>
+    </div>
+  </section>
+
+<!-- ======================= 06 渠道 ======================= -->
+  <section class="chap" id="s6">
+    <div class="chap-head">
+      <span class="no">Section 06 · Channels &amp; Dealers</span>
+      <h2>渠道与经销商：14 个渠道的横切面</h2>
+      <p class="lede">覆盖五类渠道：厂商直营、建材大连锁、电器/综合大连锁、会员店、线上专业与区域独立经销商。价格、促销、评论与渠道策略逐一实测。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 6 · Exhibit 6</p>
+      <p class="ex-title">GUD27ESSMWW 渠道实测总表（电动版）</p>
+      <p class="ex-sub">2026-08-07 单日快照；"—"= 该渠道未展示该字段；被拦截/隐价渠道如实记录</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>渠道</th><th>类型</th><th class="num">现价</th><th class="num">标价</th><th>促销 / 政策</th><th>评分（评论数）</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://www.geappliances.com/appliance/GE-Unitized-Spacemaker-3-8-cu-ft-Capacity-Washer-with-Stainless-Steel-Basket-and-5-9-cu-ft-Capacity-Electric-Dryer-GUD27ESSMWW" rel="noopener">GE Appliances 官网</a></td><td>厂商直营</td><td class="num">$1,574</td><td class="num">$1,749</td><td>清仓 −$175（10%）</td><td>—</td><td>挂在 /clearance/ 类目下</td></tr>
+          <tr><td><a href="https://www.homedepot.com/p/GE-3-8-cu-ft-Washer-5-9-cu-ft-Electric-Dryer-Combo-in-White-GUD27ESSMWW/303516041" rel="noopener">Home Depot</a></td><td>建材大连锁</td><td class="num">$1,549</td><td class="num">$1,749</td><td>省 $200（11%）；单笔限购 6 台</td><td>4.2（13,209）</td><td>另一快照 $1,398（原 $1,649）——冲突已登记</td></tr>
+          <tr><td><a href="https://www.lowes.com/pd/GE-Electric-Stacked-Laundry-Center-with-3-8-cu-ft-Washer-and-5-9-cu-ft-Dryer/5005489985" rel="noopener">Lowe's</a></td><td>建材大连锁</td><td class="num">$1,549</td><td class="num">—</td><td>—</td><td>4.2（12,000+）</td><td>同 SKU 存在多个历史商品编号</td></tr>
+          <tr><td><a href="https://www.bestbuy.com/site/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-electric-dryer-laundry-center-white/6175645.p?skuId=6175645" rel="noopener">Best Buy</a></td><td>电器大连锁</td><td class="num">$1,484.99</td><td class="num">—</td><td>18 期免息 $82.50/月；部分地区免运</td><td>4.2（1,385）</td><td>另有 Open-Box 二手渠道；大连锁最低价</td></tr>
+          <tr><td><a href="https://www.walmart.com/ip/GE-GUD27ESSMWW-Unitized-Spacemaker-3-8-Washer-with-Stainless-Steel-Basket-and-5-9-Cu-Ft-Capacity-Electric-Dryer-White/681329704" rel="noopener">Walmart</a></td><td>综合零售</td><td class="num">$1,349.99</td><td class="num">$1,438</td><td>降自 $1,438</td><td>4.3（9,746）</td><td>疑似第三方卖家（marketplace）——全网最低</td></tr>
+          <tr><td><a href="https://www.costco.com/ge-unitized-spacemaker-3.8-cu.-ft.-washer-and-5.9-cu.-ft.-electric-dryer.product.100399726.html" rel="noopener">Costco</a></td><td>会员店</td><td class="num">会员可见</td><td class="num">—</td><td>价含配送安装+旧机回收+基础件+2 年保修</td><td>4.0（984）</td><td>价格对非会员不公开——服务打包差异化</td></tr>
+          <tr><td><a href="https://www.abt.com/GE-Unitized-Spacemaker-27-White-Stack-Washer-With-Electric-Dryer-GUD27ESSMWW/p/118985.html" rel="noopener">Abt</a></td><td>独立专业店</td><td class="num">$1,549</td><td class="num">$1,749</td><td>"Your Price" vs "Comparative Value"</td><td>—</td><td>自营评论页存在但快照未见数值</td></tr>
+          <tr><td><a href="https://www.pcrichard.com/ge-27-in-laundry-center-with-3.8-cu-ft-washer-with-11-wash-programs-and-5.9-cu-ft-electric-dryer-with-4-dryer-programs-and-wrinkle-care-white/GUD27ESSMWW.html" rel="noopener">P.C. Richard &amp; Son</a></td><td>区域连锁（东北）</td><td class="num">购物车显价</td><td class="num">—</td><td>MAP 政策：加购后可见</td><td>—</td><td>厂商最低广告价约束的直接证据</td></tr>
+          <tr><td><a href="https://www.us-appliance.com/gud27essmww.html" rel="noopener">US Appliance</a></td><td>线上专业店</td><td class="num">$1,543</td><td class="num">$1,749</td><td>省 $206</td><td>—</td><td>—</td></tr>
+          <tr><td><a href="https://www.plessers.com/ge/gud27essmww" rel="noopener">Plesser's</a></td><td>区域独立（纽约）</td><td class="num">$1,542</td><td class="num">—</td><td>—</td><td>—</td><td>专业渠道最低价</td></tr>
+          <tr><td><a href="https://www.ajmadison.com/cgi-bin/ajmadison/GUD27ESSMWW.html" rel="noopener">AJ Madison</a></td><td>线上专业店</td><td class="num">未展示</td><td class="num">—</td><td>出现在"Laundry Centers On Sale"清仓类目</td><td>—</td><td>三次检索均未见公开价</td></tr>
+          <tr><td><a href="https://www.grandappliance.com/product/ge-unitized-spacemaker-38-cu-ft-washer-59-cu-ft-white-on-white-electric-dryer-gud27essmww-135540" rel="noopener">Grand Appliance</a></td><td>区域独立（中西部）</td><td class="num">未展示</td><td class="num">—</td><td>Quick Ship；送货/门店自提</td><td>—（7,556 条池）</td><td>快照仅见评论池规模</td></tr>
+          <tr><td>Nebraska Furniture Mart / RC Willey</td><td>区域独立</td><td class="num" colspan="2">未检索到该 SKU 列表</td><td>—</td><td>—</td><td>覆盖缺口如实记录</td></tr>
+          <tr><td>Wayfair / Sears</td><td>电商平台 / 百货</td><td class="num" colspan="2">无在售列表</td><td>—</td><td>—</td><td>Sears 仅存配件页（PartsDirect）</td></tr>
+        </tbody>
+      </table></div>
+      <p class="ex-src">来源：各渠道商品页（表内链接）· 抓取 2026-08-07 · <span class="prov">search snippet</span> · 原始记录存档于仓库 <code>data/channel_data.json</code></p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 7 · Exhibit 7</p>
+      <p class="ex-title">美国洗衣品类零售份额：两大建材连锁拿走 72%</p>
+      <p class="ex-sub">2025 年单位量口径 · OpenBrand（原 TraQline）公开博客</p>
+      <div class="stack-block" style="margin-bottom:6px">
+        <div class="stack" role="img" aria-label="Lowe's 40%，Home Depot 32%，其他 28%">
+          <span class="seg" style="background:var(--s1);flex:40" data-t1="Lowe's" data-t2="40% 洗衣品类单位份额（2025）" tabindex="0">Lowe's 40%</span>
+          <span class="seg" style="background:var(--s2);flex:32" data-t1="Home Depot" data-t2="32% 洗衣品类单位份额（2025）" tabindex="0">Home Depot 32%</span>
+          <span class="seg resid" style="background:var(--resid);flex:28" data-t1="其他渠道合计" data-t2="28%（余量）" data-t3="Best Buy、Costco、独立经销商、品牌直营等" tabindex="0">其他 28%</span>
+        </div>
+      </div>
+      <p class="ex-note">交叉验证：本 SKU 的评论池分布（HD 13,209 / Lowe's 12,668 vs Best Buy 1,385 / Costco 984）与 72% 双寡头结构互相印证。对经销商的含义：一体机的分销博弈实质上是"进不进得了两大连锁的货架与促销位"。</p>
+      <p class="ex-src">来源：<a href="https://openbrand.com/newsroom/blog/laundry-market-year-in-review" rel="noopener">OpenBrand: Laundry Market 2025 Year in Review</a> · 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <div class="prose">
+      <h3>渠道策略解读（基于实测）</h3>
+      <p><b>① 价格秩序自上而下：</b>GE 直营挂全渠道最高现价（$1,574）为渠道让利留出空间；大连锁整齐地站在 $1,549；专业电商与区域独立以 $1,542–1,543 贴着大连锁下沿 $6–7 抢单——价差如此之小，说明 MAP（最低广告价）约束有效，P.C. Richard 的"购物车显价"与 AJ Madison 的"不展示价格"是该约束的两种规避形态。<b>② 例外是两个：</b>Best Buy 以 $1,484.99 破位（配 18 期免息金融工具），Walmart 上疑似第三方卖家挂 $1,349.99——低于一切授权价体系，对品牌方是渠道管控预警信号。<b>③ 服务打包是价格外竞争：</b>Costco 把配送、安装、旧机回收与 2 年保修全部打进会员价；这恰好命中一体机买家（换机场景、公寓运营方）最在意的交付链路。<b>④ 覆盖缺口本身是信息：</b>NFM、RC Willey、Wayfair 无此 SKU——一体机的分销集中在"电器渠道"，家居/家具渠道基本缺席。</p>
+    </div>
+  </section>
+
+  <!-- ======================= 07 定价 ======================= -->
+  <section class="chap" id="s7">
+    <div class="chap-head">
+      <span class="no">Section 07 · Pricing</span>
+      <h2>定价分析：窄带收敛的街价与 $350 的形态断层</h2>
+      <p class="lede">电动版 11 个可见报价渠道中 8 个落在 $75 宽的窄带内；真正的价格故事发生在形态之间，而不是渠道之间。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 8 · Exhibit 8</p>
+      <p class="ex-title">GUD27ESSMWW 电动版各渠道街价（美元）</p>
+      <p class="ex-sub">条形自 $0 基线起；右侧竖线为 4 来源交叉验证的标价 $1,749</p>
+      <div class="refrow">
+        <span class="blab" aria-hidden="true"></span>
+        <span class="reftrack"><span class="reftick" style="left:97.2%"><span class="reflab">MSRP $1,749 →</span></span></span>
+        <span aria-hidden="true"></span>
+      </div>
+      <div class="bars" role="img" aria-label="八个渠道街价从 GE 官网 1574 美元到 Walmart 1349.99 美元">
+        <div class="brow"><span class="blab">GE 官网（清仓价）</span><span class="btrack baseline-rule" data-t1="GE Appliances 官网" data-t2="$1,574" data-t3="清仓：原价 $1,749 省 $175" tabindex="0"><span class="bfill" style="width:87.4%"></span></span><span class="bval">$1,574</span></div>
+        <div class="brow"><span class="blab">Home Depot</span><span class="btrack baseline-rule" data-t1="Home Depot" data-t2="$1,549" data-t3="省 $200；另一旧快照 $1,398（见冲突登记）" tabindex="0"><span class="bfill" style="width:86.1%"></span></span><span class="bval">$1,549</span></div>
+        <div class="brow"><span class="blab">Lowe's</span><span class="btrack baseline-rule" data-t1="Lowe's" data-t2="$1,549" tabindex="0"><span class="bfill" style="width:86.1%"></span></span><span class="bval">$1,549</span></div>
+        <div class="brow"><span class="blab">Abt</span><span class="btrack baseline-rule" data-t1="Abt" data-t2="$1,549" data-t3="Comparative Value $1,749" tabindex="0"><span class="bfill" style="width:86.1%"></span></span><span class="bval">$1,549</span></div>
+        <div class="brow"><span class="blab">US Appliance</span><span class="btrack baseline-rule" data-t1="US Appliance" data-t2="$1,543" data-t3="省 $206" tabindex="0"><span class="bfill" style="width:85.7%"></span></span><span class="bval">$1,543</span></div>
+        <div class="brow"><span class="blab">Plesser's</span><span class="btrack baseline-rule" data-t1="Plesser's Appliances（纽约长岛）" data-t2="$1,542" data-t3="专业渠道最低" tabindex="0"><span class="bfill" style="width:85.7%"></span></span><span class="bval">$1,542</span></div>
+        <div class="brow"><span class="blab">Best Buy</span><span class="btrack baseline-rule" data-t1="Best Buy" data-t2="$1,484.99" data-t3="18 期免息 $82.50/月" tabindex="0"><span class="bfill" style="width:82.5%"></span></span><span class="bval">$1,484.99</span></div>
+        <div class="brow"><span class="blab">Walmart<small>疑似第三方卖家</small></span><span class="btrack baseline-rule" data-t1="Walmart（疑似 marketplace 卖家）" data-t2="$1,349.99" data-t3="降自 $1,438；低于授权价体系" tabindex="0"><span class="bfill" style="width:75.0%"></span></span><span class="bval">$1,349.99</span></div>
+      </div>
+      <p class="ex-note">被排除的渠道：Costco（会员可见价）、P.C. Richard（购物车显价）、AJ Madison（未展示）——无公开数字，不做估算。折扣深度：现价对 $1,749 标价的折让为 10.0%（GE 直营）至 22.8%（Walmart 第三方）。</p>
+      <p class="ex-src">来源：图表 6 同源渠道页 · 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 9 · Exhibit 9</p>
+      <p class="ex-title">电动版 vs 燃气版：恒定 $100 溢价与一个例外</p>
+      <p class="ex-sub">同渠道同日对照（美元）；燃气版 GUD27GSSMWW 标价 $1,849</p>
+      <div class="legend"><span><span class="sw" style="background:var(--s1)"></span>电动 GUD27ESSMWW</span><span><span class="sw" style="background:var(--s2)"></span>燃气 GUD27GSSMWW</span></div>
+      <div class="pair-group">
+        <p class="pair-name">GE 官网</p>
+        <div class="brow"><span class="blab">电动</span><span class="btrack baseline-rule" data-t1="GE 官网 · 电动" data-t2="$1,574" tabindex="0"><span class="bfill" style="width:87.4%"></span></span><span class="bval">$1,574</span></div>
+        <div class="brow"><span class="blab">燃气</span><span class="btrack baseline-rule" data-t1="GE 官网 · 燃气" data-t2="$1,599" data-t3="清仓省 $250（14%）" tabindex="0"><span class="bfill s2" style="width:88.8%"></span></span><span class="bval">$1,599</span></div>
+      </div>
+      <div class="pair-group">
+        <p class="pair-name">Home Depot / Lowe's（两家同价）</p>
+        <div class="brow"><span class="blab">电动</span><span class="btrack baseline-rule" data-t1="HD / Lowe's · 电动" data-t2="$1,549" tabindex="0"><span class="bfill" style="width:86.1%"></span></span><span class="bval">$1,549</span></div>
+        <div class="brow"><span class="blab">燃气</span><span class="btrack baseline-rule" data-t1="HD / Lowe's · 燃气" data-t2="$1,649" data-t3="Lowe's 快照带'上周售出 90+ 台'热销标" tabindex="0"><span class="bfill s2" style="width:91.6%"></span></span><span class="bval">$1,649</span></div>
+      </div>
+      <div class="pair-group">
+        <p class="pair-name">Abt</p>
+        <div class="brow"><span class="blab">电动</span><span class="btrack baseline-rule" data-t1="Abt · 电动" data-t2="$1,549" tabindex="0"><span class="bfill" style="width:86.1%"></span></span><span class="bval">$1,549</span></div>
+        <div class="brow"><span class="blab">燃气</span><span class="btrack baseline-rule" data-t1="Abt · 燃气" data-t2="$1,644" tabindex="0"><span class="bfill s2" style="width:91.3%"></span></span><span class="bval">$1,644</span></div>
+      </div>
+      <div class="pair-group">
+        <p class="pair-name">Best Buy —— 例外：无燃气溢价</p>
+        <div class="brow"><span class="blab">电动</span><span class="btrack baseline-rule" data-t1="Best Buy · 电动" data-t2="$1,484.99" tabindex="0"><span class="bfill" style="width:82.5%"></span></span><span class="bval">$1,484.99</span></div>
+        <div class="brow"><span class="blab">燃气</span><span class="btrack baseline-rule" data-t1="Best Buy · 燃气" data-t2="$1,484.99" data-t3="两版同价——全渠道唯一例外" tabindex="0"><span class="bfill s2" style="width:82.5%"></span></span><span class="bval">$1,484.99</span></div>
+      </div>
+      <p class="ex-note">独立经销商观测（燃气版）：Shore Appliance $1,599 · Yudins $1,449。标价层面燃气溢价 $100（$1,849 vs $1,749）与街价层面基本一致；Best Buy 的同价策略使其成为燃气版的价格洼地。</p>
+      <p class="ex-src">来源：图表 6 同源渠道页与 <code>data/channel_data.json</code> gas_twin 记录 · 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 10 · Exhibit 10</p>
+      <p class="ex-title">容量 × 价格散点：GUD27ESSMWW 的规格性价比位置</p>
+      <p class="ex-sub">X 轴 = 洗涤容量（cu.ft.）；Y 轴 = 观测街价（美元）；每点悬停可见型号与出处</p>
+      <div class="legend">
+        <span><span class="sw" style="background:var(--s1)"></span>27" 传统一体机</span>
+        <span><span class="sw" style="background:var(--s2)"></span>24" 紧凑一体机</span>
+        <span><span class="sw" style="background:var(--s3)"></span>相邻形态（塔式 / 单桶）</span>
+        <span style="color:var(--muted)">◎ = 锚点单品</span>
+      </div>
+      <div class="svgwrap">
+      <svg viewBox="0 0 760 470" role="img" aria-label="散点图：17 个型号按洗涤容量与街价分布，传统一体机聚集在 3.5 到 3.9 容量、1300 到 1650 美元；塔式机在 4.5 以上容量、1900 美元以上">
+        <g>
+          <line class="grid-ln" x1="70" y1="420" x2="730" y2="420"></line>
+          <line class="grid-ln" x1="70" y1="347.3" x2="730" y2="347.3"></line>
+          <line class="grid-ln" x1="70" y1="274.5" x2="730" y2="274.5"></line>
+          <line class="grid-ln" x1="70" y1="201.8" x2="730" y2="201.8"></line>
+          <line class="grid-ln" x1="70" y1="129.1" x2="730" y2="129.1"></line>
+          <line class="grid-ln" x1="70" y1="56.4" x2="730" y2="56.4"></line>
+          <line class="base-ln" x1="70" y1="20" x2="70" y2="420"></line>
+        </g>
+        <g class="axis-lab">
+          <text x="62" y="424" text-anchor="end">$1,200</text>
+          <text x="62" y="351" text-anchor="end">$1,400</text>
+          <text x="62" y="278" text-anchor="end">$1,600</text>
+          <text x="62" y="206" text-anchor="end">$1,800</text>
+          <text x="62" y="133" text-anchor="end">$2,000</text>
+          <text x="62" y="60" text-anchor="end">$2,200</text>
+          <text x="152.5" y="440" text-anchor="middle">1.5</text>
+          <text x="235" y="440" text-anchor="middle">2.0</text>
+          <text x="317.5" y="440" text-anchor="middle">2.5</text>
+          <text x="400" y="440" text-anchor="middle">3.0</text>
+          <text x="482.5" y="440" text-anchor="middle">3.5</text>
+          <text x="565" y="440" text-anchor="middle">4.0</text>
+          <text x="647.5" y="440" text-anchor="middle">4.5</text>
+          <text x="730" y="440" text-anchor="middle">5.0</text>
+          <text x="400" y="464" text-anchor="middle">洗涤容量 cu.ft. →</text>
+        </g>
+        <g fill="var(--s2)" stroke="var(--surface)" stroke-width="2">
+          <circle cx="169" cy="347.6" r="6"></circle>
+          <circle cx="284.5" cy="311.3" r="6"></circle>
+          <circle cx="284.5" cy="274.9" r="6"></circle>
+        </g>
+        <g fill="var(--s3)" stroke="var(--surface)" stroke-width="2">
+          <circle cx="647.5" cy="166.5" r="6"></circle>
+          <circle cx="647.5" cy="58.2" r="6"></circle>
+          <circle cx="301" cy="165.8" r="6"></circle>
+          <circle cx="664" cy="165.5" r="6"></circle>
+          <circle cx="697" cy="92.7" r="6"></circle>
+        </g>
+        <g fill="var(--s1)" stroke="var(--surface)" stroke-width="2">
+          <circle cx="482.5" cy="266.5" r="6"></circle>
+          <circle cx="482.5" cy="293.1" r="6"></circle>
+          <circle cx="482.5" cy="284" r="6"></circle>
+          <circle cx="548.5" cy="384" r="6"></circle>
+          <circle cx="548.5" cy="347.6" r="6"></circle>
+          <circle cx="548.5" cy="366.2" r="6"></circle>
+          <circle cx="540" cy="256.7" r="6"></circle>
+          <circle cx="532" cy="256.7" r="6"></circle>
+          <circle cx="532" cy="293.1" r="7.5"></circle>
+          <circle cx="532" cy="293.1" r="12" fill="none" stroke="var(--s1)" stroke-width="1.5"></circle>
+        </g>
+        <g class="pt-lab">
+          <text x="518" y="316">GUD27ESSMWW $1,549</text>
+          <text x="120" y="336">WET4024HW（1.6 / $1,399）</text>
+          <text x="560" y="150">LG WashTower / Samsung Hub</text>
+          <text x="580" y="86">GE Profile 单桶 $2,099.99</text>
+        </g>
+        <g fill="transparent">
+          <circle cx="532" cy="293.1" r="15" data-t1="GE GUD27ESSMWW ◎ 锚点" data-t2="3.8 cu.ft. · $1,549 街价" data-t3="27 英寸传统一体机 · Home Depot/Lowe's/Abt" tabindex="0"></circle>
+          <circle cx="540" cy="256.7" r="12" data-t1="GE GUD27GSSMWW（燃气）与 Crosley XUD27（$1,649）" data-t2="3.8 cu.ft. · $1,649" data-t3="两点数值重合，横向微移展示" tabindex="0"></circle>
+          <circle cx="482.5" cy="266.5" r="12" data-t1="Whirlpool WET4027HW" data-t2="3.5 cu.ft. · $1,621.69" tabindex="0"></circle>
+          <circle cx="482.5" cy="293.1" r="12" data-t1="Whirlpool WGT4027HW（燃气）" data-t2="3.5 cu.ft. · $1,549（HD，原 $1,888）" tabindex="0"></circle>
+          <circle cx="482.5" cy="284" r="12" data-t1="Whirlpool WETLV27HW（长风道）" data-t2="3.5 cu.ft. · $1,574.10" tabindex="0"></circle>
+          <circle cx="548.5" cy="384" r="12" data-t1="Frigidaire FLCE7522AW" data-t2="3.9 cu.ft. · $1,299（Plesser's）" data-t3="观测区间 $1,234.99–1,599.97" tabindex="0"></circle>
+          <circle cx="548.5" cy="347.6" r="12" data-t1="Frigidaire FLCG7522AW（燃气）" data-t2="3.9 cu.ft. · $1,399" tabindex="0"></circle>
+          <circle cx="548.5" cy="366.2" r="12" data-t1="Frigidaire FLCE7523AW（长风道）" data-t2="3.9 cu.ft. · $1,348" tabindex="0"></circle>
+          <circle cx="169" cy="347.6" r="14" data-t1="Whirlpool WET4024HW（24 英寸）" data-t2="1.6 cu.ft. · $1,399" tabindex="0"></circle>
+          <circle cx="284.5" cy="311.3" r="12" data-t1="GE GUD24ESSMWW（24 英寸）" data-t2="2.3 cu.ft. · $1,499" tabindex="0"></circle>
+          <circle cx="284.5" cy="274.9" r="12" data-t1="GE GUD24GSSMWW（24 英寸燃气）" data-t2="2.3 cu.ft. · $1,599" tabindex="0"></circle>
+          <circle cx="647.5" cy="166.5" r="12" data-t1="LG WashTower WKEX200HWA" data-t2="4.5 cu.ft. · $1,897（Slyman；MSRP $2,299.99）" tabindex="0"></circle>
+          <circle cx="647.5" cy="58.2" r="12" data-t1="LG WashTower WKGX201HWA（燃气）" data-t2="4.5 cu.ft. · $2,195（Plesser's）" tabindex="0"></circle>
+          <circle cx="301" cy="165.8" r="12" data-t1="LG 24 英寸 WashTower WKHC152HWA（热泵免排风）" data-t2="2.4 cu.ft. · $1,899" tabindex="0"></circle>
+          <circle cx="664" cy="165.5" r="12" data-t1="Samsung Bespoke AI Laundry Hub WH46DBH100EW" data-t2="4.6 cu.ft. · $1,899.99（Jetson；MSRP $2,199）" tabindex="0"></circle>
+          <circle cx="697" cy="92.7" r="12" data-t1="GE Profile UltraFast PFQ97HSPVDS（单桶洗烘一体）" data-t2="4.8 cu.ft. · $2,099.99（Best Buy）" tabindex="0"></circle>
+        </g>
+      </svg>
+      </div>
+      <p class="ex-note">读法：传统一体机（蓝）密集于右下方"3.5–3.9 容量 × $1,300–1,650"矩形——品类内部按容量几乎不定价（Frigidaire 3.9 反而最便宜），定价锚是<b>形态</b>而非规格。塔式/单桶（绿）整体上移 $350–650，构成第二价格层。GUD27ESSMWW（◎）站在传统层的规格上沿。</p>
+      <details class="dtable"><summary>查看数据表</summary>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>型号</th><th class="num">洗容</th><th class="num">街价</th><th>出处渠道</th></tr></thead>
+          <tbody>
+            <tr class="hl"><td>GE GUD27ESSMWW</td><td class="num">3.8</td><td class="num">$1,549</td><td>HD / Lowe's / Abt</td></tr>
+            <tr><td>GE GUD27GSSMWW</td><td class="num">3.8</td><td class="num">$1,649</td><td>HD / Lowe's</td></tr>
+            <tr><td>Crosley XUD27ESSMWW</td><td class="num">3.8</td><td class="num">$1,649</td><td>Clayton / JH Appliance</td></tr>
+            <tr><td>Whirlpool WET4027HW</td><td class="num">3.5</td><td class="num">$1,621.69</td><td>快照（Walmart 有售）</td></tr>
+            <tr><td>Whirlpool WGT4027HW</td><td class="num">3.5</td><td class="num">$1,549</td><td>Home Depot</td></tr>
+            <tr><td>Whirlpool WETLV27HW</td><td class="num">3.5</td><td class="num">$1,574.10</td><td>经销商促销价</td></tr>
+            <tr><td>Frigidaire FLCE7522AW</td><td class="num">3.9</td><td class="num">$1,299</td><td>Plesser's</td></tr>
+            <tr><td>Frigidaire FLCG7522AW</td><td class="num">3.9</td><td class="num">$1,399</td><td>经销商快照</td></tr>
+            <tr><td>Frigidaire FLCE7523AW</td><td class="num">3.9</td><td class="num">$1,348</td><td>Home Depot</td></tr>
+            <tr><td>GE GUD24ESSMWW</td><td class="num">2.3</td><td class="num">$1,499</td><td>Home Depot</td></tr>
+            <tr><td>GE GUD24GSSMWW</td><td class="num">2.3</td><td class="num">$1,599</td><td>Home Depot</td></tr>
+            <tr><td>Whirlpool WET4024HW</td><td class="num">1.6</td><td class="num">$1,399</td><td>Home Depot</td></tr>
+            <tr><td>LG WKEX200HWA</td><td class="num">4.5</td><td class="num">$1,897</td><td>Slyman Bros</td></tr>
+            <tr><td>LG WKGX201HWA</td><td class="num">4.5</td><td class="num">$2,195</td><td>Plesser's</td></tr>
+            <tr><td>LG WKHC152HWA（24"）</td><td class="num">2.4</td><td class="num">$1,899</td><td>Appliance Depot Outlet</td></tr>
+            <tr><td>Samsung WH46DBH100EW</td><td class="num">4.6</td><td class="num">$1,899.99</td><td>Jetson</td></tr>
+            <tr><td>GE Profile PFQ97HSPVDS</td><td class="num">4.8</td><td class="num">$2,099.99</td><td>Best Buy</td></tr>
+          </tbody>
+        </table></div>
+      </details>
+      <p class="ex-src">来源：<code>data/sku_matrix.json</code> 各行来源 URL（第 12 章附录）· 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 11 · Exhibit 11</p>
+      <p class="ex-title">价格阶梯：三个层与一条品类全域带</p>
+      <p class="ex-sub">横条 = 观测街价区间（美元）；细竖线 = GUD27ESSMWW 主流街价 $1,549</p>
+      <div class="bars">
+        <div class="brow">
+          <span class="blab">Lowe's 品类页全域<small>含塔式；类目自述</small></span>
+          <span class="btrack" data-t1="Lowe's 'Stacked Laundry Centers' 类目" data-t2="$1,298 – $3,099 · 典型价 $1,878" data-t3="类目页自述；LG/GE/Whirlpool 为最热品牌" tabindex="0"><span class="bfill" style="margin-left:40.6%;width:56.3%;border-radius:4px;background:var(--resid)"></span></span>
+          <span class="bval"><small>典型</small> $1,878</span>
+        </div>
+        <div class="brow">
+          <span class="blab">传统 27" 一体机</span>
+          <span class="btrack" data-t1="传统 27 英寸一体机街价带" data-t2="$1,234.99 – $1,649" data-t3="9 个在售 SKU 的观测区间" tabindex="0"><span class="bfill" style="margin-left:38.6%;width:12.9%;border-radius:4px;position:relative"><span style="position:absolute;left:75.9%;top:-3px;bottom:-3px;width:2px;background:var(--ink)"></span></span></span>
+          <span class="bval">$1,235–1,649</span>
+        </div>
+        <div class="brow">
+          <span class="blab">24" 紧凑一体机</span>
+          <span class="btrack" data-t1="24 英寸紧凑一体机街价带" data-t2="$1,248 – $1,599" tabindex="0"><span class="bfill" style="margin-left:39.0%;width:11.0%;border-radius:4px"></span></span>
+          <span class="bval">$1,248–1,599</span>
+        </div>
+        <div class="brow">
+          <span class="blab">塔式单体（LG/Samsung）</span>
+          <span class="btrack" data-t1="塔式单体机街价带" data-t2="$1,897 – $2,199（街价）" data-t3="MSRP $2,199–2,799；单桶 GE Profile $2,099.99 亦落在此层" tabindex="0"><span class="bfill s3" style="margin-left:59.3%;width:9.4%;border-radius:4px"></span></span>
+          <span class="bval">$1,897–2,199</span>
+        </div>
+      </div>
+      <p class="ex-note">结构判断：传统一体机与塔式之间存在约 <b>$250–350 的空档</b>（$1,650–1,900 几乎无 SKU）——这是"要么买便宜的旋钮机、要么加钱上智能塔"的形态断层，也是 GUD27ESSMWW 提价空间的天花板所在。促销侧：传统机折让常态 10–14%，而 OpenBrand 记录 LG 品牌平均折扣率高达 27.3%——塔式的标价水分更大，实际价差比标价差更小。</p>
+      <p class="ex-src">来源：<a href="https://www.lowes.com/pl/washers-dryers/stacked-laundry-centers/4294791544" rel="noopener">Lowe's 类目页</a> · <a href="https://openbrand.com/newsroom/blog/laundry-market-year-in-review" rel="noopener">OpenBrand 2025 Year in Review</a> · 图表 10 数据表 · 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+  </section>
+
+  <!-- ======================= 08 消费者 ======================= -->
+  <section class="chap" id="s8">
+    <div class="chap-head">
+      <span class="no">Section 08 · Consumer Insights</span>
+      <h2>消费者洞察：4.2 星的真实构成</h2>
+      <p class="lede">六个平台、约 4.5 万条累计评论记录（含疑似联合池重复）。先看池子结构再读主题，避免被联合池的规模错觉误导。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 12 · Exhibit 12</p>
+      <p class="ex-title">评论池结构：疑似联合池 vs 独立池</p>
+      <p class="ex-sub">GUD27ESSMWW 各平台评分与评论数（2026-08-07 快照；快照间有 ±2% 漂移）</p>
+      <div class="legend">
+        <span><span class="sw" style="background:var(--s1)"></span>疑似 Bazaarvoice 联合池（跨站共享评论）</span>
+        <span><span class="sw" style="background:var(--s3)"></span>疑似独立池（平台自有评论）</span>
+      </div>
+      <div class="bars" role="img" aria-label="六个平台评论数：Home Depot 13209，Lowe's 12668，Walmart 9746，Lowe's 第二列表 7568，Best Buy 1385，Costco 984">
+        <div class="brow"><span class="blab">Home Depot</span><span class="btrack baseline-rule" data-t1="Home Depot" data-t2="4.2 ★ · 13,209 条" data-t3="快照区间 12,974–13,209" tabindex="0"><span class="bfill" style="width:94.3%"></span></span><span class="bval">13,209 <small>· 4.2★</small></span></div>
+        <div class="brow"><span class="blab">Lowe's（主列表）</span><span class="btrack baseline-rule" data-t1="Lowe's 商品编号 1000374215" data-t2="4.2 ★ · 12,668 条" tabindex="0"><span class="bfill" style="width:90.5%"></span></span><span class="bval">12,668 <small>· 4.2★</small></span></div>
+        <div class="brow"><span class="blab">Walmart</span><span class="btrack baseline-rule" data-t1="Walmart" data-t2="4.3 ★ · 9,746 条" data-t3="快照区间 9,740–9,976" tabindex="0"><span class="bfill" style="width:69.6%"></span></span><span class="bval">9,746 <small>· 4.3★</small></span></div>
+        <div class="brow"><span class="blab">Lowe's（现行列表）</span><span class="btrack baseline-rule" data-t1="Lowe's 商品编号 5005489985" data-t2="4.4 ★ · 7,568 条" data-t3="同 SKU 第二列表——池规则不同" tabindex="0"><span class="bfill" style="width:54.1%"></span></span><span class="bval">7,568 <small>· 4.4★</small></span></div>
+        <div class="brow"><span class="blab">Best Buy</span><span class="btrack baseline-rule" data-t1="Best Buy" data-t2="4.2 ★ · 1,385 条" data-t3="快照区间 1,269–1,385；独立池特征" tabindex="0"><span class="bfill s3" style="width:9.9%"></span></span><span class="bval">1,385 <small>· 4.2★</small></span></div>
+        <div class="brow"><span class="blab">Costco</span><span class="btrack baseline-rule" data-t1="Costco" data-t2="4.0 ★ · 984 条" data-t3="会员制独立池——最保守的口碑读数" tabindex="0"><span class="bfill s3" style="width:7.0%"></span></span><span class="bval">984 <small>· 4.0★</small></span></div>
+      </div>
+      <p class="ex-note">判定依据：HD（13,209）与 Lowe's 主列表（12,668）几乎同量、同为 4.2 星，Walmart/Grand Appliance（7,556）落在同一数量级——符合 GE 经 Bazaarvoice 跨零售商共享评论池、各站收录规则略异的特征；未检索到 "originally posted on…" 字样（定向检索无果，且页面直抓被拦截无法复核）。Best Buy 与 Costco 池小一个数量级、且按具体型号区分（燃气版仅 193 条）——更像平台自有评论。<b>读数建议</b>：口碑上界取联合池 4.2–4.4，下界取 Costco 独立池 4.0。GE 官网自身评分：任何快照均未浮出 <span class="prov">数据不可得</span>。星级分布（5/4/3/2/1 占比）仅页面内渲染，本次环境无法取得 → 数据缺口。</p>
+      <p class="ex-src">来源：各平台评论页（图表 6 表内链接 + <code>data/review_mining.json</code>）· 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 13 · Exhibit 13</p>
+      <p class="ex-title">评论主题：四大好评 vs 四大差评（附平台原文）</p>
+      <p class="ex-sub">主题按跨平台出现频次归纳；引语为快照呈现原文（标注"转述"者为搜索摘要转写）</p>
+      <div class="quote-cols">
+        <div class="qcol">
+          <h4>👍 好评主题</h4>
+          <div class="theme"><b>1 · 空间适配（最高频）</b>
+            <blockquote>"fits perfectly [in their master bathroom]"<span class="att">Best Buy / P.C. Richard 评论 · 引语短词经原文校验</span></blockquote>
+            <blockquote>"It saves a huge amount of space"<span class="att">Walmart 评论（快照摘要）</span></blockquote>
+          </div>
+          <div class="theme"><b>2 · 操作简单</b>
+            <blockquote>"easy to use and does a good job of getting clothes clean and spins very dry"<span class="att">Walmart 评论</span></blockquote>
+          </div>
+          <div class="theme"><b>3 · 洗烘性能与速度</b>
+            <blockquote>"The dryer is very fast acting and runs quietly without vibrating the house"<span class="att">Walmart 评论（快照摘要）</span></blockquote>
+          </div>
+          <div class="theme"><b>4 · 同级里可调性最全</b>
+            <blockquote>"the most customizability in its class, having several options for adjusting temperature and water levels"<span class="att">Reviewed.com 编辑评测（转述）</span></blockquote>
+          </div>
+        </div>
+        <div class="qcol">
+          <h4>👎 差评主题</h4>
+          <div class="theme"><b>1 · 甩干振动与噪音</b>
+            <blockquote>"the washer can be a little noisy"<span class="att">Best Buy 评论（摘要）；PartSelect 设有该型号 "Noisy" 故障症状页佐证</span></blockquote>
+          </div>
+          <div class="theme"><b>2 · 周期体验：甩干太长、无结束提示音</b>
+            <blockquote>"…spin cycle too long and no buzzer notification at the end of the washing cycle or the dryer cycle."<span class="att">Walmart / Best Buy 评论 · 快照以直接引语呈现</span></blockquote>
+          </div>
+          <div class="theme"><b>3 · 早期故障个案（DOA / 数月内送修）</b>
+            <blockquote>"On the first wash load, the washer made a grinding noise and shut down mid-cycle… by day three, the dryer stopped working completely"（近原文）<span class="att">Home Depot 评论第 5 页</span></blockquote>
+            <blockquote>"3.5 month old GE GUD27ESSMWW isn't working"<span class="att">JustAnswer 求助帖标题</span></blockquote>
+          </div>
+          <div class="theme"><b>4 · 实际安装深度超规格</b>
+            <blockquote>"the vent hose and electrical box add about 4″ to the actual depth"（近原文）<span class="att">Best Buy 等平台评论摘要 · 排风管仅后出是主因</span></blockquote>
+          </div>
+        </div>
+      </div>
+      <p class="ex-note">与官方叙事的张力：J.D. Power 2025 家电可靠性研究把 GE 评为最可靠品牌、洗衣三个子类第一（2026-01 发布）——品牌级可靠性声誉与单品级早期故障个案并存，属正常统计现象，但差评主题 1/3（振动、早期故障）是同一机械结构（顶开搅拌+上置烘干共壳）的固有代价。产品改进弹药：结束蜂鸣器是被点名最多、工程代价最小的缺失项。</p>
+      <p class="ex-src">来源：<code>data/review_mining.json</code>（各引语平台与 URL 逐条存档）· <a href="https://pressroom.geappliances.com/news/ge-appliances-recognized-as-the" rel="noopener">GE 新闻室（J.D. Power）</a> · 抓取 2026-08-07 · <span class="prov">search snippet</span> · 注意：星级分布与评论日期页面内渲染，本环境不可得，时间趋势不做判断</p>
+    </div>
+  </section>
+
+<!-- ======================= 09 宏观与监管 ======================= -->
+  <section class="chap" id="s9">
+    <div class="chap-head">
+      <span class="no">Section 09 · Macro, Trade &amp; Regulation</span>
+      <h2>宏观与监管：关税落地、成本创新高、2028 能效大限</h2>
+      <p class="lede">三条时间线正在同时改写品类成本结构：2025 年 6 月的钢衍生品关税、创历史新高的出厂价格指数、以及 2028 年 3 月生效的 DOE 新能效标准。</p>
+    </div>
+
+    <div class="prose">
+      <h3>① 关税：洗衣机/烘干机已进 50% 钢衍生品税目</h3>
+      <p>2025-06-16 商务部 BIS 公告（90 FR 25209）将家用电器纳入 Section 232 钢衍生品清单，<b>2025-06-23 生效，税率 50%</b>——洗衣机（HTSUS 8450.11.00 / 8450.20.00）与烘干机（8451.21.00 / 8451.29.00）被明确点名。关键细节：<b>关税按申报的钢含量价值计征</b>，而非整机货值；法律链条为 Proclamation 10896 → 10947（2025-06-03 提至 50%）→ CBP 实施令；且"inclusions process"仍开放，后续可继续加品类。一体机全钢柜体结构意味着钢含量占比高于普通家电，进口机型承压更大。</p>
+      <p>但要警惕"关税必然涨价"的直觉：NBER 工作论文 25767 记录了 2012（韩国/墨西哥）与 2016（中国）两轮洗衣机反倾销税后，<b>洗衣设备 CPI 在随后 12 个月反而各下降约 5%</b>——厂商产能转移与竞争消化了税负。本轮的不同在于 232 覆盖全来源国且叠加国内产能回流。</p>
+      <h3>② GE 的对冲：4.9 亿美元洗衣产能回流</h3>
+      <p>GE Appliances 于 2025-06-26 宣布投资 <b>4.9 亿美元</b>在路易斯维尔 Appliance Park 改造 Building 2，新增 800 个全职岗位，把 GE Profile UltraFast 单桶机与 UltraFresh 前开洗衣机系列（15 个型号）<b>从中国回流美国生产，2027 年投产</b>，并宣称"预计成为最大的美国洗衣机制造商"；同年 8 月追加五年 <b>30 亿美元</b>投资计划。注意边界：公告点名的是前开系与单桶机，<b>未提及一体机产线</b>；GUD27 系列的原产地公开不可核实（缺口 #5）——若为进口，则 50% 钢含量关税直接作用于其成本。</p>
+      <h3>③ 2028 能效大限：全品类被迫刷新一代产品</h3>
+      <p>DOE 2024 年 3 月同时定稿洗衣机与烘干机新能效标准（联合了 AHAM 与节能组织的共同建议案），<b>合规期限均为 2028-03-01</b>；新指标"与现行 ENERGY STAR 水平相当"，AHAM 公开表态新标准"保留了重要的消费者功能"。DOE 估算洗衣机新标 30 年节能 0.7 quadrillion Btu（约 3%）。<b>未决问题</b>：快照中出现"标准不适用于标准尺寸顶开机"的矛盾表述，且一体机（laundry center）作为组合产品如何适用，原文被拦截无法核实（缺口 #4）——这直接决定 GUD27 平台 2028 年是否需要换代，是本报告最重要的待核实监管问题。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 14 · Exhibit 14</p>
+      <p class="ex-title">价格环境：洗衣设备 CPI 的三次历史跳涨与创新高的出厂价</p>
+      <p class="ex-sub">左：美国 CPI"Laundry equipment"历史年涨幅前三（%）；右：关键价格事实</p>
+      <div class="bars" role="img" aria-label="CPI 年涨幅：1980 年 7.9%，2012 年 8.54%，2021 年 19.29%">
+        <div class="brow"><span class="blab">1980<small>第二次石油危机</small></span><span class="btrack baseline-rule" data-t1="1980 年 CPI 洗衣设备" data-t2="+7.90% YoY" tabindex="0"><span class="bfill" style="width:39.5%"></span></span><span class="bval">+7.90%</span></div>
+        <div class="brow"><span class="blab">2012<small>首轮洗衣机反倾销税年</small></span><span class="btrack baseline-rule" data-t1="2012 年 CPI 洗衣设备" data-t2="+8.54% YoY" data-t3="随后 12 个月转为约 −5%（NBER）" tabindex="0"><span class="bfill" style="width:42.7%"></span></span><span class="bval">+8.54%</span></div>
+        <div class="brow"><span class="blab">2021<small>疫情供应链</small></span><span class="btrack baseline-rule" data-t1="2021 年 CPI 洗衣设备" data-t2="+19.29% YoY（史上最大）" tabindex="0"><span class="bfill" style="width:96.5%"></span></span><span class="bval">+19.29%</span></div>
+      </div>
+      <div class="kpis" style="margin-top:18px">
+        <div class="tile"><p class="k">CPI 洗衣设备 1977→2026 累计</p><p class="v">+50.09%</p><p class="d">2026 年指数读数约 106.1（BLS 镜像）</p></div>
+        <div class="tile"><p class="k">PPI 大家电制造</p><p class="v">174.369</p><p class="d">2025-12 历史新高（官方序列镜像）</p></div>
+        <div class="tile"><p class="k">OpenBrand 洗衣价格指数</p><p class="v">+1.9% / +1.2%</p><p class="d">2025-03 / 2025-05 环比</p></div>
+        <div class="tile"><p class="k">历史关税后 12 个月 CPI</p><p class="v">−5%</p><p class="d">2012 与 2016 两轮均如此（NBER WP 25767）</p></div>
+      </div>
+      <p class="ex-note">口径披露：CPI 数值取自 BLS 官方序列的公开镜像站（bls.gov 本体被本环境拦截，2025→2026 精确 YoY 未能取得，列为缺口 #7）；PPI 同为官方序列镜像。出厂价（PPI）创新高 + 零售价（CPI/OpenBrand）温和上行 = 零售端毛利被挤压中，这解释了渠道为何普遍收紧折扣纪律（MAP 隐价、限购 6 台）。</p>
+      <p class="ex-src">来源：<a href="https://www.officialdata.org/Laundry-equipment/price-inflation" rel="noopener">BLS CPI Laundry equipment（镜像）</a> · <a href="https://tradingeconomics.com/united-states/producer-price-index-by-industry-major-appliance-manufacturing-fed-data.html" rel="noopener">PPI 大家电制造（镜像）</a> · <a href="https://www.nber.org/system/files/working_papers/w25767/w25767.pdf" rel="noopener">NBER WP 25767</a> · <a href="https://openbrand.com/newsroom/blog/laundry-market-year-in-review" rel="noopener">OpenBrand</a> · 抓取 2026-08-07 · <span class="prov">search snippet</span></p>
+    </div>
+
+    <p class="ex-src" style="border:none;max-width:800px">本章一级来源：<a href="https://www.govinfo.gov/content/pkg/FR-2025-06-16/pdf/2025-10950.pdf" rel="noopener">90 FR 25209（BIS 关税公告 PDF）</a> · <a href="https://www.federalregister.gov/documents/2025/06/16/2025-11067/implementation-of-duties-on-steel-pursuant-to-proclamation-10896-adjusting-imports-of-steel-into-the" rel="noopener">CBP 实施令</a> · <a href="https://www.federalregister.gov/documents/2024/03/12/2024-04765/energy-conservation-program-energy-conservation-standards-for-consumer-clothes-dryers" rel="noopener">DOE 烘干机最终规则</a> · <a href="https://www.energy.gov/sites/default/files/2024-02/clothes-washer-ecs-dfr.pdf" rel="noopener">DOE 洗衣机 DFR</a> · <a href="https://pressroom.geappliances.com/news/ge-appliances-doubles-down-on-u-s-manufacturing-with-490-million-laundry-plant-investment-at-its-global-headquarters-in-louisville-kentucky" rel="noopener">GE $490M 公告</a> · <a href="https://pressroom.geappliances.com/news/ge-appliances-announces-historic-3-billion-investment-to-expand-u-s-manufacturing" rel="noopener">GE $3B 公告</a></p>
+  </section>
+
+  <!-- ======================= 10 SWOT ======================= -->
+  <section class="chap" id="s10">
+    <div class="chap-head">
+      <span class="no">Section 10 · SWOT &amp; Implications</span>
+      <h2>SWOT 与战略启示</h2>
+      <p class="lede">SWOT 逐条挂靠正文图表；启示按三类读者分列。分析判断已明确标注为判断，区别于数据事实。</p>
+    </div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 15 · Exhibit 15</p>
+      <p class="ex-title">GUD27ESSMWW 的品类内 SWOT</p>
+      <p class="ex-sub">括号内为证据出处（本报告图表编号）</p>
+      <div class="swot">
+        <div class="cell">
+          <h4>优势 <small>STRENGTHS</small></h4>
+          <ul>
+            <li>三家幸存者之一，且烘容并列品类最大、洗容第二（图表 4）</li>
+            <li>价格窄带里的"默认选择"：8 渠道收敛 $1,542–1,574，分销进入全部主流电器渠道（图表 6/8）</li>
+            <li>顶开偏好基本盘：66% 单位份额形态 + 27" 原位替换 + 旋钮零学习成本（图表 3/13）</li>
+            <li>品牌背书：J.D. Power 2025 最可靠家电品牌、洗衣三子类第一（第 08 章）</li>
+            <li>评论池体量断层领先新竞品：1.3 万 vs 三星 Hub 46 条（图表 12）</li>
+          </ul>
+        </div>
+        <div class="cell">
+          <h4>劣势 <small>WEAKNESSES</small></h4>
+          <ul>
+            <li>规格代差：洗容 3.8 vs 塔式 4.5–4.6；无联网、无蒸汽、800 RPM 低转速（图表 4/10）</li>
+            <li>被点名的体验缺陷：无结束提示音、甩干振动噪音、实际深度 +4"（图表 13）</li>
+            <li>早期故障个案集中于共壳机械结构；Costco 独立池仅 4.0 星（图表 12/13）</li>
+            <li>Frigidaire 以更大洗容（3.9）卖更低价（$1,299）——规格性价比不占优（图表 10）</li>
+          </ul>
+        </div>
+        <div class="cell">
+          <h4>机会 <small>OPPORTUNITIES</small></h4>
+          <ul>
+            <li>2021–2024 多户交付潮（峰值 60.8 万套/年、95% 租赁）的存量将进入替换周期（图表 2；判断）</li>
+            <li>$1,650–1,900 的形态断层空档：小改款上探空间（图表 11；判断）</li>
+            <li>竞品收缩：Whirlpool 官网缺货、上代停产，两家竞品 SKU 在 Lowe's 下架（图表 4）</li>
+            <li>2028 DOE 大限迫使全品类换代——先出合规新平台者重设货架（第 09 章；判断）</li>
+            <li>关税提高进口塔式机成本，若 GUD27 为美产则相对受益（第 09 章；原产地待核实）</li>
+          </ul>
+        </div>
+        <div class="cell">
+          <h4>威胁 <small>THREATS</small></h4>
+          <ul>
+            <li>类目合流后塔式机同货架压制：$350 价差换 20% 容量 + 智能（图表 1/10/11）</li>
+            <li>编辑评测已把品类榜首让给三星/LG，传统机被定位为"预算选项"（第 05 章）</li>
+            <li>多户完工 2025 年 −20%，新装需求管线收缩（图表 2）</li>
+            <li>DOE 新规对一体机的适用性未明——若顶开平台需重设计，成本上行（缺口 #4）</li>
+            <li>Walmart 第三方 $1,349.99 破价侵蚀价格体系（图表 8）</li>
+          </ul>
+        </div>
+      </div>
+      <p class="ex-src">证据映射见括号引用；标注"判断"者为本报告基于硬数据的分析推论，非直接观测数据。</p>
+    </div>
+
+    <div class="prose">
+      <h3>三类读者的行动启示（判断）</h3>
+    </div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>如果你是…</th><th>核心结论</th><th>具体动作</th></tr></thead>
+      <tbody>
+        <tr><td><b>买家 / 采购方</b>（房东、物业、自住）</td><td>$1,549 是公允价，$1,484.99（Best Buy）以下即好价；燃气版仅在已有气源时考虑</td><td>核对柜位深度时按"标称 30.9" + 约 4" 排风/电源余量"计算；换机场景优先 Costco 打包（含安装回收+2 年保修）；对 Walmart $1,349.99 第三方渠道核实卖家与保修归属再下单</td></tr>
+        <tr><td><b>零售 / 经销商</b></td><td>一体机是低竞争、稳周转的"柜位替换刚需"品；毛利战场在服务打包而非价格</td><td>对标 Costco 做"配送+安装+回收"打包；备货侧重电动版（80% 电烘结构 + 92% 多户电烘）；关注 2028 合规换代节点的清库风险；燃气版参考 Lowe's"周销 90+ 台"热销信号区域性备货</td></tr>
+        <tr><td><b>品牌 / 产品方</b></td><td>护城河 = 顶开偏好 × 价格下限 × 原位替换；最大风险 = 塔式下探与 2028 规则不确定性</td><td>最低成本改进：结束蜂鸣器与减振（差评前二、工程代价小）；评估 $1,650–1,900 空档的"半智能"改款；尽快确认 DOE 规则对一体机的适用路径；若产线在海外，测算 50% 钢含量关税 vs 路易斯维尔回流的成本平衡</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ======================= 11 数据缺口与采购 ======================= -->
+  <section class="chap" id="s11">
+    <div class="chap-head">
+      <span class="no">Section 11 · Data Gaps &amp; Procurement</span>
+      <h2>数据缺口与采购路径：缺什么、去哪买、多少钱、值不值</h2>
+      <p class="lede">按你的数据纪律要求：公开域拿不到的关键数据，这里给出完整的采购路径、已公布价格与必要性分析——不用估算填缝。</p>
+    </div>
+
+    <h3>缺口清单（公开域确认不可得）</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>#</th><th>缺失数据</th><th>为什么拿不到</th><th>补齐路径</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>洗衣机/烘干机/一体机分品类出货量（2023–2026）</td><td>AHAM FSR 为订阅品，无公开单位数新闻稿</td><td>AHAM 商店购买 FSR / Annual Shipment Trends</td></tr>
+        <tr><td>2</td><td>Laundry center 品牌份额与品类规模</td><td>公开域仅存在付费研究估算</td><td>OpenBrand Durable IQ 或 Circana（下表）</td></tr>
+        <tr><td>3</td><td>RECS 2020 分楼型洗衣机/烘干机保有率精确值</td><td>eia.gov 表格被本环境拦截</td><td>免费：无拦截网络直接下载 HC3.1 表</td></tr>
+        <tr><td>4</td><td>DOE 2028 新规对顶开机与一体机的确切适用范围</td><td>快照矛盾，联邦公报原文被拦截</td><td>免费：核读 FR 2024-04765 与洗衣机 DFR 原文</td></tr>
+        <tr><td>5</td><td>GUD27ESSMWW 原产地</td><td>零售列表与 GE 页均无 "Made in" 声明</td><td>免费/低成本：查 CBP 进口记录（Panjiva/ImportGenius 付费）或 GE 客服铭牌信息</td></tr>
+        <tr><td>6</td><td>星级分布（5/4/3/2/1）与评论时间趋势</td><td>仅页面内渲染，本环境无法取得</td><td>免费：无拦截网络抓取各平台评论 API/页面</td></tr>
+        <tr><td>7</td><td>BLS CPI 洗衣设备 2025→2026 精确 YoY、AHS 2023 分楼型洗衣机保有率、Whirlpool 10-K 原文段落、海尔北美分部营收</td><td>bls.gov / Census 工具 / sec.gov 被拦截</td><td>免费：官方源直读（无拦截环境）</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="exhibit">
+      <p class="ex-no">图表 16 · Exhibit 16</p>
+      <p class="ex-title">付费数据采购矩阵：11 家供应商横评</p>
+      <p class="ex-sub">"已公布价格"仅收录页面可见的官方标价；其余如实标注"询价"；可靠性层级按供应商自述方法论分级</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>供应商 / 产品</th><th>对本品类能交付什么</th><th class="num">已公布价格</th><th>可靠性层级（按其自述）</th><th>入口</th></tr></thead>
+        <tbody>
+          <tr class="hl"><td><b>OpenBrand（原 TraQline）· Durable IQ</b></td><td>美国耐用品<b>品牌份额/零售商份额/价格带/线上占比</b>，季度，170+ 品类——洗衣品类明确覆盖；LG/三星新闻稿引用的就是它。免费层：MarketSignal 仪表盘与博客（本报告已用尽）</td><td class="num">询价<br><span class="sm">免费仪表盘 $0</span></td><td>消费者调查面板：年 60 万户、季度 15 万户、90 天回忆期——<b>调查法，非 POS</b></td><td><a href="https://openbrand.com/market-measurement" rel="noopener">openbrand.com</a>（可先约免费数据报告演示）</td></tr>
+          <tr class="hl"><td><b>Circana</b>（原 NPD+IRI）· 家电 POS</td><td>零售 <b>POS 实销</b>：按零售商/渠道/价格段/产品属性，周/月频——属性层级可切出 laundry center</td><td class="num">询价</td><td>零售 POS 面板（最高层级）：自述覆盖 290M 家庭交易、美国 1,100+ 零售伙伴校准</td><td><a href="https://www.circana.com/industries/appliances" rel="noopener">circana.com</a>（30 分钟 demo）</td></tr>
+          <tr><td><b>AHAM</b> · Factory Shipment Report / Annual Trends</td><td>行业级<b>工厂出货台数</b>（本土+进口）月度对比；Annual Trends 1989–2025 含家用洗衣品类——无品牌拆分</td><td class="num">店内标价未浮出<br><span class="sm">一条快照示例：会员 $350 / 非会员 $5,000（未锚定具体产品，需店内核实）</span></td><td>制造商直报出货（一级来源）；自述"行业最可靠出货数据"</td><td><a href="https://www.aham.org/ItemDetail?iProductCode=FSR2025&Category=DATAPROG&WebsiteKey=2b49af81-10d3-4aa0-98cb-47387f36cf18" rel="noopener">aham.org 商店</a></td></tr>
+          <tr><td><b>Statista</b> · Market Insights</td><td>美国洗衣机/家电<b>市场规模与预测</b>（模型值）+ 三方统计聚合（部分图表转引 TraQline）——无品牌份额、无型号级</td><td class="num"><b>$199/月</b>（Starter，年付）<br><b>$1,399/月</b>（Professional，5 席）</td><td>聚合+模型预测层级</td><td><a href="https://www.statista.com/accounts/individuals/" rel="noopener">statista.com 定价页</a></td></tr>
+          <tr><td><b>IBISWorld</b> · 美国大家电制造业报告</td><td>行业规模（其口径：2024 $25.0bn → 2025 $24.8bn，−0.8%）、趋势、公司分析——制造业视角，非零售份额</td><td class="num"><b>$2,850</b>/整报告<br><b>$800</b>/Spotlight</td><td>模型估算层级（Census 基础+回归外推，自述）</td><td><a href="https://help.ibisworld.com/en/articles/8119074-how-much-does-it-cost-to-purchase-one-report" rel="noopener">ibisworld.com</a></td></tr>
+          <tr><td><b>Freedonia</b> · Focus Report 美国大家电</td><td>需求与出货预测（至 2028）按产品段拆分（含洗衣段）+ 市场领导者章节</td><td class="num">本报价未浮出<br><span class="sm">同系列报告 $900–1,100（marketresearch.com）</span></td><td>模型估算层级</td><td><a href="https://www.freedoniagroup.com/freedonia-focus/major-household-appliances-united-states-ff90017.htm" rel="noopener">freedoniagroup.com</a></td></tr>
+          <tr><td><b>Grand View Research</b></td><td>北美洗衣机烘干机市场规模/预测（其口径：2033 年 $21.18Bn；美国住宅洗衣机 2022 年 $5,504.0M、CAGR 6.7%）</td><td class="num">询价<span class="sm">（页面标价未在快照浮出）</span></td><td>模型估算层级</td><td><a href="https://www.grandviewresearch.com/industry-analysis/north-america-household-washer-dryer-market-report" rel="noopener">grandviewresearch.com</a></td></tr>
+          <tr><td><b>Mordor Intelligence</b></td><td>美国洗衣设备市场（其口径：2026 $8.12B → 2031 $9.43B，CAGR 3.04%）按产品/装载/容量/渠道拆分+公司份额分析</td><td class="num">询价<span class="sm">（快照称单用户 $4,750 惯例价，未锚定本报告，需页面核实）</span></td><td>模型估算层级</td><td><a href="https://www.mordorintelligence.com/industry-reports/united-states-laundry-appliances-market-industry" rel="noopener">mordorintelligence.com</a></td></tr>
+          <tr><td><b>YipitData</b> / <b>M Science</b></td><td>机构级另类数据（公司/标的层面）——未见家电品类专门产品</td><td class="num">询价<span class="sm">（自述"最贵数据集之一"）</span></td><td>另类数据层级（网络/交易派生）</td><td>datarade.ai 供应商页</td></tr>
+          <tr><td><b>Earnest Analytics</b>（Consumer Edge）</td><td>刷卡面板消费（零售商层面家电邻近支出）+ 网络爬取零售价格/折扣数据（Snowflake 上有现成 listing）</td><td class="num">询价</td><td>刷卡面板（代理指标，非 POS 全量）</td><td><a href="https://www.earnestanalytics.com/earnest-analytics-data" rel="noopener">earnestanalytics.com</a></td></tr>
+        </tbody>
+      </table></div>
+      <p class="ex-src">来源：各供应商官网/帮助中心/经销页（表内链接与 <code>data/paid_data_catalog.json</code>）· 抓取 2026-08-07 · <span class="prov">search snippet</span> · 询价类目一律未标价，防止误导</p>
+    </div>
+
+    <div class="prose">
+      <h3>必要性分析与三档采购组合（判断）</h3>
+      <p>先回答"要不要买"：<b>如果你的决策只需要方向判断</b>（这个形态是否值得进入/持有、价格带在哪、竞争几家、渠道找谁）——本报告的免费硬数据已经足够，<b>建议一分钱不花</b>，仅在无拦截网络上把缺口 #3/#4/#7 的免费官方源补读一遍（半天工作量，零成本）。<b>需要花钱的只有两种情况</b>：要做<b>量化预测</b>（备货量、进口量、市场进入测算）→ 需要出货台数；要做<b>份额追踪</b>（GE 在一体机的份额、塔式侵蚀速度）→ 需要面板/POS 数据。</p>
+    </div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>档位</th><th>组合</th><th class="num">确定成本</th><th>解锁什么</th><th>必要性评级</th></tr></thead>
+      <tbody>
+        <tr><td><b>L1 · 桌面底座档</b></td><td>Statista Starter（$199/月·年付）+ IBISWorld Spotlight（$800）或 Freedonia Focus（约 $900）</td><td class="num">首年约 $3,200–3,300</td><td>大盘规模/预测的可引用底座、行业报告框架；<b>仍无品牌份额</b></td><td>低——仅当需要对外引用"市场规模"数字时购买；方向判断不需要</td></tr>
+        <tr><td><b>L2 · 出货量化档</b></td><td>L1 + AHAM FSR 或 Annual Shipment Trends（店内核价；快照示例非会员 $5,000 量级）</td><td class="num">首年约 $8K 量级（待核价）</td><td>洗衣品类<b>月度出货台数</b>（本土/进口拆分）→ 可做备货与渗透率测算</td><td>中——做进口、代工或备货决策时<b>必要</b>；纯零售/内容决策不必要</td></tr>
+        <tr><td><b>L3 · 份额追踪档</b></td><td>OpenBrand Durable IQ（询价）或 Circana 家电 POS（询价；两者按行业惯例为年费五位数美元起）</td><td class="num">询价<span class="sm">（先约免费 demo/样本报告再谈价）</span></td><td>Laundry center <b>品牌/零售商份额、价格带、线上占比、季度趋势</b>——回答"GE 份额多少、塔式侵蚀多快"的唯一路径</td><td>高（条件性）——若你的核心问题就是份额与趋势，这是<b>无替代方案的必买项</b>；建议先用两家的免费 demo 验证 laundry center 颗粒度再签约。选择逻辑：预算优先选 OpenBrand（调查面板、便宜、LG/三星背书其权威性）；精度优先选 Circana（POS 实销）</td></tr>
+      </tbody>
+    </table></div>
+    <p class="dim" style="max-width:800px;font-size:13px">注：上表"确定成本"仅含已公布标价项；"年费五位数美元起"为行业惯例判断而非报价，已明确标注。所有询价项在签约前务必让对方演示 laundry center 这一细分的实际颗粒度——大家电追踪产品未必默认拆出一体机子品类。</p>
+  </section>
+
+  <!-- ======================= 12 附录 ======================= -->
+  <section class="chap" id="s12">
+    <div class="chap-head">
+      <span class="no">Section 12 · Appendix</span>
+      <h2>来源附录与免责声明</h2>
+      <p class="lede">按来源类型分组；全部 URL 与逐条数据的对应关系存档于仓库 <code>data/</code> 目录四个文件。</p>
+    </div>
+
+    <h3>零售渠道（实测 14 家）</h3>
+    <ul class="src-list">
+      <li><a href="https://www.geappliances.com/appliance/GE-Unitized-Spacemaker-3-8-cu-ft-Capacity-Washer-with-Stainless-Steel-Basket-and-5-9-cu-ft-Capacity-Electric-Dryer-GUD27ESSMWW" rel="noopener">GE Appliances 官网（电动版产品页）</a> / <a href="https://www.geappliances.com/appliance/GE-Unitized-Spacemaker-3-8-cu-ft-Capacity-Washer-with-Stainless-Steel-Basket-and-5-9-cu-ft-Capacity-Gas-Dryer-GUD27GSSMWW" rel="noopener">燃气版</a></li>
+      <li><a href="https://www.homedepot.com/p/GE-3-8-cu-ft-Washer-5-9-cu-ft-Electric-Dryer-Combo-in-White-GUD27ESSMWW/303516041" rel="noopener">Home Depot</a> · <a href="https://www.lowes.com/pd/GE-Electric-Stacked-Laundry-Center-with-3-8-cu-ft-Washer-and-5-9-cu-ft-Dryer/5005489985" rel="noopener">Lowe's</a> · <a href="https://www.bestbuy.com/site/ge-3-8-cu-ft-top-load-washer-and-5-9-cu-ft-electric-dryer-laundry-center-white/6175645.p?skuId=6175645" rel="noopener">Best Buy</a> · <a href="https://www.walmart.com/ip/GE-GUD27ESSMWW-Unitized-Spacemaker-3-8-Washer-with-Stainless-Steel-Basket-and-5-9-Cu-Ft-Capacity-Electric-Dryer-White/681329704" rel="noopener">Walmart</a> · <a href="https://www.costco.com/ge-unitized-spacemaker-3.8-cu.-ft.-washer-and-5.9-cu.-ft.-electric-dryer.product.100399726.html" rel="noopener">Costco</a></li>
+      <li><a href="https://www.abt.com/GE-Unitized-Spacemaker-27-White-Stack-Washer-With-Electric-Dryer-GUD27ESSMWW/p/118985.html" rel="noopener">Abt</a> · <a href="https://www.pcrichard.com/ge-27-in-laundry-center-with-3.8-cu-ft-washer-with-11-wash-programs-and-5.9-cu-ft-electric-dryer-with-4-dryer-programs-and-wrinkle-care-white/GUD27ESSMWW.html" rel="noopener">P.C. Richard</a> · <a href="https://www.us-appliance.com/gud27essmww.html" rel="noopener">US Appliance</a> · <a href="https://www.plessers.com/ge/gud27essmww" rel="noopener">Plesser's</a> · <a href="https://www.ajmadison.com/cgi-bin/ajmadison/GUD27ESSMWW.html" rel="noopener">AJ Madison</a> · <a href="https://www.grandappliance.com/product/ge-unitized-spacemaker-38-cu-ft-washer-59-cu-ft-white-on-white-electric-dryer-gud27essmww-135540" rel="noopener">Grand Appliance</a>（NFM / RC Willey / Wayfair / Sears 检索无在售列表，如实记录）</li>
+    </ul>
+
+    <h3>品牌与竞品官网</h3>
+    <ul class="src-list">
+      <li><a href="https://www.whirlpool.com/laundry/laundry-sets/washer-dryer-combination/p.WET4027HW.html" rel="noopener">Whirlpool WET4027HW</a> · <a href="https://www.frigidaire.com/en/p/laundry-care/laundry-centers/FLCE7522AW" rel="noopener">Frigidaire FLCE7522AW</a> · <a href="https://www.crosley.com/xud27essmww.html" rel="noopener">Crosley XUD27</a> · <a href="https://www.lg.com/us/washers-dryers/lg-wkex200hwa-washtower" rel="noopener">LG WashTower</a> · <a href="https://www.samsung.com/us/home-appliances/washers/stacked-washer-and-dryer/bespoke-4-6-cu-ft-ai-laundry-hub-large-capacity-single-unit-washer-with-steam-wash-and-7-6-cu-ft-electric-dryer-in-white-wh46dbh100ewa3/" rel="noopener">Samsung Bespoke AI Laundry Hub</a> · <a href="https://www.maytag.com/washers-and-dryers/stackable-laundry.html" rel="noopener">Maytag（无一体机佐证）</a> · <a href="https://www.reviewed.com/laundry/best-right-now/the-best-laundry-centers" rel="noopener">Reviewed 2026 品类评测</a></li>
+    </ul>
+
+    <h3>行业、政府与研究</h3>
+    <ul class="src-list">
+      <li>AHAM 出货（经行业媒体）：<a href="https://www.kitchenbathdesign.com/mid-year-market-uncertainty-lingers/" rel="noopener">KBDN Q1 2025</a> · <a href="https://www.kitchenbathdesign.com/a-bullish-though-tempered-outlook/" rel="noopener">KBDN H1 2025</a>；AHAM 商店：<a href="https://www.aham.org/ItemDetail?iProductCode=FSR2025&Category=DATAPROG&WebsiteKey=2b49af81-10d3-4aa0-98cb-47387f36cf18" rel="noopener">FSR 2025</a></li>
+      <li>住房：<a href="https://www.census.gov/library/visualizations/interactive/snapshot-of-nations-housing-stock-2023.html" rel="noopener">Census 2023 AHS 快照</a> · <a href="https://eyeonhousing.org/2025/07/2024-multifamily-construction-units-completed-reaches-38-year-high/" rel="noopener">NAHB 2024 完工分析</a> · <a href="https://www.nahb.org/blog/2026/07/multifamily-high-density-completion-trends-2025" rel="noopener">NAHB 2025 完工</a> · <a href="https://www.nahb.org/news-and-economics/press-releases/2026/02/overall-housing-starts-inch-lower-in-2025" rel="noopener">NAHB 2025 开工</a> · <a href="https://www.mba.org/news-and-research/newsroom/blog-post/chart-of-the-week--potential-trajectories-of-multifamily-completions" rel="noopener">MBA</a> · <a href="https://www.census.gov/construction/nrc/pdf/newresconst.pdf" rel="noopener">Census NRC 月报</a> · <a href="https://calnext.com/wp-content/uploads/2026/02/ET25SWE0009_Market-and-Technical-Evaluation-of-Combination-Washer-Dryer-Units-for-Multifamily-Buildings_Final-Report.pdf" rel="noopener">CalNEXT（引 RECS）</a></li>
+      <li>监管与贸易：<a href="https://www.govinfo.gov/content/pkg/FR-2025-06-16/pdf/2025-10950.pdf" rel="noopener">90 FR 25209 关税公告</a> · <a href="https://www.federalregister.gov/documents/2025/06/16/2025-11067/implementation-of-duties-on-steel-pursuant-to-proclamation-10896-adjusting-imports-of-steel-into-the" rel="noopener">CBP 实施令</a> · <a href="https://www.internationaltradeinsights.com/2025/06/eleven-new-steel-derivatives-added-to-50-section-232-tariffs-beginning-june-23/" rel="noopener">贸易律所解读</a> · <a href="https://www.federalregister.gov/documents/2024/03/12/2024-04765/energy-conservation-program-energy-conservation-standards-for-consumer-clothes-dryers" rel="noopener">DOE 烘干机规则</a> · <a href="https://www.energy.gov/sites/default/files/2024-02/clothes-washer-ecs-dfr.pdf" rel="noopener">DOE 洗衣机 DFR</a> · <a href="https://aspe.org/pipeline/u-s-doe-finalizes-efficiency-standards-for-residential-clothes-washers-and-clothes-dryers/" rel="noopener">ASPE 解读</a></li>
+      <li>价格与学术：<a href="https://www.officialdata.org/Laundry-equipment/price-inflation" rel="noopener">CPI 洗衣设备（BLS 镜像）</a> · <a href="https://tradingeconomics.com/united-states/producer-price-index-by-industry-major-appliance-manufacturing-fed-data.html" rel="noopener">PPI 大家电（镜像）</a> · <a href="https://www.nber.org/system/files/working_papers/w25767/w25767.pdf" rel="noopener">NBER WP 25767</a> · <a href="https://www.reservedataanalyst.com/mt-content/uploads/2019/10/national-association-of-home-builders-life-expectancies.pdf" rel="noopener">NAHB 部件寿命研究（镜像）</a></li>
+      <li>公司：<a href="https://www.sec.gov/Archives/edgar/data/106640/000010664025000011/whr-20241231.htm" rel="noopener">Whirlpool 10-K</a> · <a href="https://smart-home.haier.com/media/l5tdgfto/haier-smart-home-fy-2024-annual-report.pdf" rel="noopener">海尔智家 FY2024 年报</a> · <a href="https://www.haier.com/global/press-events/news/20260402_288863.shtml" rel="noopener">海尔 FY2025</a> · <a href="https://pressroom.geappliances.com/news/ge-appliances-doubles-down-on-u-s-manufacturing-with-490-million-laundry-plant-investment-at-its-global-headquarters-in-louisville-kentucky" rel="noopener">GE $490M</a> · <a href="https://pressroom.geappliances.com/news/ge-appliances-announces-historic-3-billion-investment-to-expand-u-s-manufacturing" rel="noopener">GE $3B</a> · <a href="https://geappliancesco.com/company-overview/" rel="noopener">GE 公司页</a> · <a href="https://www.electroluxgroup.com/en/electrolux-strengthens-offering-in-north-america-with-new-high-performance-energy-efficient-laundry-pair-34465/" rel="noopener">Electrolux</a> · <a href="https://www.koreatimes.co.kr/business/tech-science/20240410/samsung-lg-account-for-40-of-us-home-appliance-market" rel="noopener">Korea Times</a> · <a href="https://openbrand.com/newsroom/blog/us-major-appliance-industry-market-share-trends-rankings-infographic" rel="noopener">OpenBrand Q4 2025</a> · <a href="https://openbrand.com/newsroom/blog/laundry-market-year-in-review" rel="noopener">OpenBrand 2025 Year in Review</a></li>
+    </ul>
+
+    <div class="callout" style="margin-top:28px">
+      <b>免责声明与数据边界。</b>本报告为单日（2026-08-07）联网快照研究：① 因研究环境出口代理拦截零售/政府域名的直接抓取，全部数字取自搜索结果快照，个别快照存在最长约两周的时滞，价格与库存可能已变动；② 报告严格区分三类内容——<b>观测数据</b>（带来源链接）、<b>他方估算</b>（标注"其口径/自述/估算"）、<b>本报告判断</b>（标注"判断"）；③ 快照间冲突一律双记（第 02 章登记表）；④ 品类级份额与出货明细在公开域不存在，对应结论以第 11 章采购路径替代，本报告不以估算填充；⑤ 本报告非投资建议，与 GE Appliances 及任何供应商无利益关联。原始数据存档：仓库 <code>reports/ge-gud27essmww-na-market-analysis/data/</code> 目录（channel_data / sku_matrix / market_macro_data / paid_data_catalog / review_mining）。
+    </div>
+
+    <div class="foot">
+      <p>报告制作：Claude Code 联网调研（4 条并行工作流，约 220 次检索/抓取调用）· 数据抓取与成稿日 2026-08-07 · 中文正文，英文引语保留原文以便核对 · 图表 16 张，全部由报告内数据直接渲染，无外部图片依赖。</p>
+    </div>
+  </section>
+
+</div>
+
+<div id="tip" role="status" aria-hidden="true"></div>
+
+<script>
+(function () {
+  var tip = document.getElementById('tip');
+  function show(el, x, y) {
+    while (tip.firstChild) tip.removeChild(tip.firstChild);
+    var rows = [['t1', el.getAttribute('data-t1')], ['t2', el.getAttribute('data-t2')], ['t3', el.getAttribute('data-t3')]];
+    rows.forEach(function (r) {
+      if (r[1]) {
+        var d = document.createElement('div');
+        d.className = r[0];
+        d.textContent = r[1];
+        tip.appendChild(d);
+      }
+    });
+    tip.style.display = 'block';
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var px = Math.min(Math.max(8, x + 14), window.innerWidth - w - 8);
+    var py = y - h - 12 < 8 ? y + 18 : y - h - 12;
+    tip.style.left = px + 'px';
+    tip.style.top = py + 'px';
+  }
+  function hide() { tip.style.display = 'none'; }
+  document.addEventListener('pointermove', function (e) {
+    var el = e.target.closest && e.target.closest('[data-t1]');
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  document.addEventListener('pointerdown', function (e) {
+    var el = e.target.closest && e.target.closest('[data-t1]');
+    if (el) show(el, e.clientX, e.clientY);
+  });
+  document.addEventListener('focusin', function (e) {
+    var el = e.target.closest && e.target.closest('[data-t1]');
+    if (el) { var r = el.getBoundingClientRect(); show(el, r.left + r.width / 2, r.top); }
+  });
+  document.addEventListener('focusout', hide);
+  document.addEventListener('scroll', hide, true);
+})();
+</script>
